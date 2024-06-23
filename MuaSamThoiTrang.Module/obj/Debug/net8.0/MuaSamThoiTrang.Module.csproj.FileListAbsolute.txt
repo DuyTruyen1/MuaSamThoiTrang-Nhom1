@@ -1,0 +1,12 @@
+D:\CS403K\MuaSamThoiTrang\MuaSamThoiTrang.Module\bin\Debug\net8.0\MuaSamThoiTrang.Module.deps.json
+D:\CS403K\MuaSamThoiTrang\MuaSamThoiTrang.Module\bin\Debug\net8.0\MuaSamThoiTrang.Module.dll
+D:\CS403K\MuaSamThoiTrang\MuaSamThoiTrang.Module\bin\Debug\net8.0\MuaSamThoiTrang.Module.pdb
+D:\CS403K\MuaSamThoiTrang\MuaSamThoiTrang.Module\obj\Debug\net8.0\MuaSamThoiTrang.Module.csproj.AssemblyReference.cache
+D:\CS403K\MuaSamThoiTrang\MuaSamThoiTrang.Module\obj\Debug\net8.0\MuaSamThoiTrang.Module.GeneratedMSBuildEditorConfig.editorconfig
+D:\CS403K\MuaSamThoiTrang\MuaSamThoiTrang.Module\obj\Debug\net8.0\MuaSamThoiTrang.Module.AssemblyInfoInputs.cache
+D:\CS403K\MuaSamThoiTrang\MuaSamThoiTrang.Module\obj\Debug\net8.0\MuaSamThoiTrang.Module.AssemblyInfo.cs
+D:\CS403K\MuaSamThoiTrang\MuaSamThoiTrang.Module\obj\Debug\net8.0\MuaSamThoiTrang.Module.csproj.CoreCompileInputs.cache
+D:\CS403K\MuaSamThoiTrang\MuaSamThoiTrang.Module\obj\Debug\net8.0\MuaSamThoiTrang.Module.dll
+D:\CS403K\MuaSamThoiTrang\MuaSamThoiTrang.Module\obj\Debug\net8.0\refint\MuaSamThoiTrang.Module.dll
+D:\CS403K\MuaSamThoiTrang\MuaSamThoiTrang.Module\obj\Debug\net8.0\MuaSamThoiTrang.Module.pdb
+D:\CS403K\MuaSamThoiTrang\MuaSamThoiTrang.Module\obj\Debug\net8.0\ref\MuaSamThoiTrang.Module.dll
