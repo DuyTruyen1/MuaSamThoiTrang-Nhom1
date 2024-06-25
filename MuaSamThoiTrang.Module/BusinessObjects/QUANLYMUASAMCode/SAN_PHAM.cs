@@ -9,11 +9,15 @@ using DevExpress.Persistent.Base;
 namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
 {
     [DefaultClassOptions]
+    [DefaultProperty("TenSP")]
 
     public partial class SAN_PHAM
     {
         public SAN_PHAM(Session session) : base(session) { }
-        public override void AfterConstruction() { base.AfterConstruction(); }
+        public override void AfterConstruction() { 
+            base.AfterConstruction();
+           
+        }
     }
 
 }
