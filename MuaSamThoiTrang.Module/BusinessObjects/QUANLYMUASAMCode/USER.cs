@@ -12,6 +12,7 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
 
     public partial class USER
     {
+        //hello
         public USER(Session session) : base(session) { }
         public override void AfterConstruction() { base.AfterConstruction(); }
     }
