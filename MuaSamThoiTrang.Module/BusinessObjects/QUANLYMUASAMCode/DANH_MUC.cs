@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Reflection;
 using DevExpress.Persistent.Base;
+using DevExpress.XtraRichEdit.Model;
 namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
 {
     [DefaultClassOptions]
@@ -14,6 +15,7 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
     {
         public DANH_MUC(Session session) : base(session) { }
         public override void AfterConstruction() { base.AfterConstruction(); }
+        
     }
 
 }

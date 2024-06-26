@@ -50,11 +50,12 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
             get { return fTrangThai; }
             set { SetPropertyValue<bool>(nameof(TrangThai), ref fTrangThai, value); }
         }
-        decimal fSoLuong;
-        public decimal SoLuong
+        THONG_KE fMaTk;
+        [Association(@"DAT_HANGReferencesTHONG_KE")]
+        public THONG_KE MaTk
         {
-            get { return fSoLuong; }
-            set { SetPropertyValue<decimal>(nameof(SoLuong), ref fSoLuong, value); }
+            get { return fMaTk; }
+            set { SetPropertyValue<THONG_KE>(nameof(MaTk), ref fMaTk, value); }
         }
         [Association(@"CT_DAT_HANGReferencesDAT_HANG")]
         public XPCollection<CT_DAT_HANG> CT_DAT_HANGs { get { return GetCollection<CT_DAT_HANG>(nameof(CT_DAT_HANGs)); } }
