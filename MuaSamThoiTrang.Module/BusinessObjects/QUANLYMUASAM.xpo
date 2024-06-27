@@ -66,34 +66,20 @@
             <field Id="42a6ac93-e636-4422-88e8-f9309898b72c" name="DonGia" columnType="Decimal" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
           <generalXpObjectHasFields Id="5b81f19c-badf-470b-9457-e6b5f1393681">
-            <field Id="e19438f4-cafd-40d5-aed7-e02df2526704" name="DVT" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+            <field Id="e19438f4-cafd-40d5-aed7-e02df2526704" name="DVT" columnType="Char" virtualColumnType="Char" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
-          <generalXpObjectHasFields Id="32d6983c-5969-4566-83d5-d9ed4a4a3d1c">
-            <field Id="32b7d05c-b8ae-4e19-80e5-9d922328aba7" name="MaTK" virtualColumnType="THONG_KE" logicalType="THONG_KE" delayedUpdateModifiedOnly="false" />
+          <generalXpObjectHasFields Id="2da897af-c213-4a0c-922c-791033bb78f3">
+            <field Id="a28ed900-5c0d-4d67-b1d9-76648532e934" name="Mota" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
         </fields>
         <saTargets>
-          <simpleAssociation Id="6f182e8e-a698-443c-a684-97128986e628" sourceCollectionName="DAT_HANGs" name="DAT_HANGReferencesSAN_PHAM" targetFieldName="LoaiSP">
-            <xpObjectMoniker Id="a3dd0c3e-9839-41da-85b5-86c8399cb130" />
-          </simpleAssociation>
-          <simpleAssociation Id="2c627039-1292-40a1-ad59-a71e097aef5d" sourceCollectionName="CT_DAT_HANGs" name="CT_DAT_HANGReferencesSAN_PHAM" targetFieldName="LoaiSP">
+          <simpleAssociation Id="2c627039-1292-40a1-ad59-a71e097aef5d" sourceCollectionName="CT_DAT_HANGs" name="CT_DAT_HANGReferencesSAN_PHAM" targetFieldName="MaSanPham">
             <xpObjectMoniker Id="f09fccaf-db98-4def-923c-0764dd682fcd" />
           </simpleAssociation>
         </saTargets>
-        <mMTarget>
-          <manyToManyRelationship Id="732fa782-eb62-4448-bd8a-a5ae84ed40eb" sourceCollectionName="KHO_HANGs" name="KHO_HANGReferencesSAN_PHAM" targetCollectionName="SAN_PHAMs">
-            <xpObjectMoniker Id="c70c0246-0d11-4b12-a587-a7080dc6969d" />
-          </manyToManyRelationship>
-        </mMTarget>
         <collectionFields>
-          <xpObjectHasCollectionFields Id="37e42b35-a535-4211-8f6e-ce6ca9b25bd9">
-            <collectionField Id="d8b50e18-cb16-4938-9dcf-82ce787a1638" name="DAT_HANGs" />
-          </xpObjectHasCollectionFields>
           <xpObjectHasCollectionFields Id="50e7843d-7d20-4503-a8a7-e42ef298e475">
             <collectionField Id="eced85cc-3c6b-430b-8b54-43f73533ffbc" name="CT_DAT_HANGs" />
-          </xpObjectHasCollectionFields>
-          <xpObjectHasCollectionFields Id="ff58979d-f981-436e-a341-73346856fab3">
-            <collectionField Id="5b67a8fe-f51c-4519-891d-d207e98849e0" name="KHO_HANGs" />
           </xpObjectHasCollectionFields>
         </collectionFields>
       </xpObject>
@@ -142,35 +128,6 @@
         </collectionFields>
       </xpObject>
     </dataBaseObjectModelHasClasses>
-    <dataBaseObjectModelHasClasses Id="28624531-2a16-467b-8dcf-624efef232e2">
-      <xpObject Id="c70c0246-0d11-4b12-a587-a7080dc6969d" name="KHO_HANG" baseClass="XPBaseObject" userFileName="KHO_HANG" designerFileName="KHO_HANG.Designer" className="KHO_HANG" virtualBaseClass="XPBaseObject" virtualName="KHO_HANG">
-        <fields>
-          <generalXpObjectHasFields Id="b5e5ef0f-b77a-4445-9be4-5adaf5458644">
-            <field Id="2ef98ec6-194f-46a3-9dde-8af500ebcd8e" name="MaKho" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
-          </generalXpObjectHasFields>
-          <generalXpObjectHasFields Id="de8f3d88-0907-47d1-bf8c-98afc8755402">
-            <field Id="8c98cc3b-e258-4247-8af6-d8f55d7e33d7" name="LoaiSP" virtualColumnType="SAN_PHAM" logicalType="SAN_PHAM" delayedUpdateModifiedOnly="false" />
-          </generalXpObjectHasFields>
-          <generalXpObjectHasFields Id="6ba5932b-f2e9-42ad-a96f-6362e0e0cbf6">
-            <field Id="f99341d7-55d7-4a65-9911-8ed4244577da" name="NgayNhapKho" columnType="DateTime" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
-          </generalXpObjectHasFields>
-          <generalXpObjectHasFields Id="dc279cf2-2c1a-4349-a3f0-60b424158543">
-            <field Id="27d5690f-c00d-4cc3-aa4f-355b720a5369" name="NgayXuatKho" columnType="DateTime" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
-          </generalXpObjectHasFields>
-          <generalXpObjectHasFields Id="36cc5e62-d9a4-4a2f-b636-057ba334263f">
-            <field Id="58922292-4ab6-47c9-899f-bb8d0d90bdbe" name="TrangThai" columnType="Boolean" virtualColumnType="Boolean" delayedUpdateModifiedOnly="false" />
-          </generalXpObjectHasFields>
-          <generalXpObjectHasFields Id="6f28a9c2-d602-42b9-83e8-fe38a3f4a396">
-            <field Id="fdda5aa3-d0a4-4c1e-b123-f13c3fe0e7e6" name="SoLuong" columnType="Int64" virtualColumnType="Int64" delayedUpdateModifiedOnly="false" />
-          </generalXpObjectHasFields>
-        </fields>
-        <collectionFields>
-          <xpObjectHasCollectionFields Id="1d85c7b6-0897-4c21-a476-fa722f9080f9">
-            <collectionField Id="4fbd1b37-cb3e-49a1-be91-ed2d11a29015" name="SAN_PHAMs" />
-          </xpObjectHasCollectionFields>
-        </collectionFields>
-      </xpObject>
-    </dataBaseObjectModelHasClasses>
     <dataBaseObjectModelHasClasses Id="d1467e07-efd7-4ca1-a2d8-7cd57bbd9778">
       <xpObject Id="8c67fffa-4b16-4b33-a3f2-74ee3b9352cd" name="DANH_GIA" baseClass="XPBaseObject" userFileName="DANH_GIA" designerFileName="DANH_GIA.Designer" className="DANH_GIA" virtualBaseClass="XPBaseObject" virtualName="DANH_GIA">
         <fields>
@@ -192,18 +149,27 @@
           <generalXpObjectHasFields Id="be9d031f-8524-42ce-801f-6f6682151c56">
             <field Id="dd1dc64a-d125-4a75-9c13-218d67b36bdf" name="MaTK" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="17b80f1f-28c4-40b2-8ebb-82df33bded5d">
+            <field Id="09a769f5-af11-40da-91b1-125f0e768058" name="NgayThongKe" columnType="DateTime" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
           <generalXpObjectHasFields Id="0eefaedb-2445-47a7-8e36-997eada4a1c9">
-            <field Id="bb2db58e-5da8-480a-84af-a86cc38dabd0" name="SoLuong" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+            <field Id="bb2db58e-5da8-480a-84af-a86cc38dabd0" name="SoDonHang" columnType="Int32" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
         </fields>
         <saTargets>
-          <simpleAssociation Id="04d49e96-ec88-4a82-844d-b57ca8a111c0" sourceCollectionName="SAN_PHAMs" name="SAN_PHAMReferencesTHONG_KE" targetFieldName="MaTK">
-            <xpObjectMoniker Id="d7c95109-fa61-4f5a-8edc-6a27fb85a46e" />
+          <simpleAssociation Id="b7a73528-2a36-4ac7-97b2-7d593594d931" sourceCollectionName="DAT_HANGs" name="DAT_HANGReferencesTHONG_KE" targetFieldName="MaTK">
+            <xpObjectMoniker Id="a3dd0c3e-9839-41da-85b5-86c8399cb130" />
+          </simpleAssociation>
+          <simpleAssociation Id="973f5666-4ad7-40e4-9c8a-39960a64517f" sourceCollectionName="CT_DAT_HANGs" name="CT_DAT_HANGReferencesTHONG_KE" targetFieldName="MaTK">
+            <xpObjectMoniker Id="f09fccaf-db98-4def-923c-0764dd682fcd" />
           </simpleAssociation>
         </saTargets>
         <collectionFields>
-          <xpObjectHasCollectionFields Id="12c79e28-861d-4605-805c-10511c3e1049">
-            <collectionField Id="bbc875e4-480b-4552-b8c1-dac96315ff8a" name="SAN_PHAMs" />
+          <xpObjectHasCollectionFields Id="77f44929-e9e2-448e-b69b-aa3d1cf9f95e">
+            <collectionField Id="a987c2fb-4ba6-4343-aec1-b0ffe4276468" name="DAT_HANGs" />
+          </xpObjectHasCollectionFields>
+          <xpObjectHasCollectionFields Id="a49c5736-eae2-4635-b868-b33d85fc8071">
+            <collectionField Id="dfb58a7d-53ba-416c-9475-09b5a9dbfef4" name="CT_DAT_HANGs" />
           </xpObjectHasCollectionFields>
         </collectionFields>
       </xpObject>
@@ -217,24 +183,18 @@
           <generalXpObjectHasFields Id="c22b7731-48f0-4215-a7ff-68f7731465c8">
             <field Id="142bc5af-4651-4160-8dbf-303c38576756" name="NguoiDat" virtualColumnType="USER" logicalType="USER" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
-          <generalXpObjectHasFields Id="b3b5a0b7-640a-4ee1-aac7-e0503f09c247">
-            <field Id="a58ea841-6185-4c88-a82d-1ef60fd4cd40" name="LoaiSP" virtualColumnType="SAN_PHAM" logicalType="SAN_PHAM" delayedUpdateModifiedOnly="false" />
-          </generalXpObjectHasFields>
           <generalXpObjectHasFields Id="857886c7-fc5f-4628-b35f-d7b9e6066920">
             <field Id="20c8ab9f-d2ba-425a-8e0a-d587a9e80006" name="NgayDH" columnType="DateTime" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
           <generalXpObjectHasFields Id="7af76f29-6f57-47f9-9828-ef6feb4fda5e">
             <field Id="29606913-a6ff-46b4-a816-2fd366dfa7da" name="TrangThai" columnType="Boolean" virtualColumnType="Boolean" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
-          <generalXpObjectHasFields Id="c16f3c0d-628a-4bf3-87ff-c28dfa67f24e">
-            <field Id="d9d3e427-e69c-4ab5-90b5-354cd7e543cc" name="SoLuong" columnType="Decimal" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
-          </generalXpObjectHasFields>
-          <generalXpObjectHasFields Id="bf90050d-ac56-4f70-8764-7443bac56925">
-            <field Id="a1cd1096-3447-4121-9726-fb6d07b9b725" name="DonGia" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          <generalXpObjectHasFields Id="e0708fca-83e8-4d9c-867d-05eaf6aa57aa">
+            <field Id="4e7b06a4-bae7-436e-b7ff-c78d107972f5" name="MaTK" virtualColumnType="THONG_KE" logicalType="THONG_KE" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
         </fields>
         <saTargets>
-          <simpleAssociation Id="4f968e6c-ef16-4270-9515-7b94088d77c7" sourceCollectionName="CT_DAT_HANGs" name="CT_DAT_HANGReferencesDAT_HANG" targetFieldName="LoaiHangDat">
+          <simpleAssociation Id="4f968e6c-ef16-4270-9515-7b94088d77c7" sourceCollectionName="CT_DAT_HANGs" name="CT_DAT_HANGReferencesDAT_HANG" targetFieldName="MaDatHang">
             <xpObjectMoniker Id="f09fccaf-db98-4def-923c-0764dd682fcd" />
           </simpleAssociation>
           <simpleAssociation Id="f6e5cd0f-3c32-43d2-850e-2a1d7eea6b55" sourceCollectionName="HOA_DONs" name="HOA_DONReferencesDAT_HANG" targetFieldName="ThongTinHangDat">
@@ -258,13 +218,22 @@
             <field Id="19abcad5-dd62-4c29-a252-2fe31e9a0107" name="MaCT" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
           <generalXpObjectHasFields Id="585b8325-3275-40ed-b56f-ff52b2c440cf">
-            <field Id="443c1196-a0b1-42a1-a114-3939cc4d48f3" name="LoaiHangDat" virtualColumnType="DAT_HANG" logicalType="DAT_HANG" delayedUpdateModifiedOnly="false" />
+            <field Id="443c1196-a0b1-42a1-a114-3939cc4d48f3" name="MaDatHang" virtualColumnType="DAT_HANG" logicalType="DAT_HANG" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
           <generalXpObjectHasFields Id="3ec3aa44-c959-4df8-af16-a554ec4156f9">
-            <field Id="e92767ce-d7ca-4c8a-8666-a0eb8697df34" name="LoaiSP" virtualColumnType="SAN_PHAM" logicalType="SAN_PHAM" delayedUpdateModifiedOnly="false" />
+            <field Id="e92767ce-d7ca-4c8a-8666-a0eb8697df34" name="MaSanPham" virtualColumnType="SAN_PHAM" logicalType="SAN_PHAM" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
           <generalXpObjectHasFields Id="aacdd45e-6979-4585-b89c-d324151a3acc">
             <field Id="8d0a766f-f109-459b-8a2e-aefd797594f1" name="SoLuong" columnType="Int64" virtualColumnType="Int64" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="292a7e6b-ef16-4f82-a3d8-043237b548ae">
+            <field Id="b552d82e-0f67-401d-8a6a-9955df284133" name="DonGia" columnType="Decimal" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="e2e60c62-55f7-4c69-98d2-b5d3aacc083b">
+            <field Id="abdf40ab-b198-491d-9df6-8f16d26665e5" name="TongTien" columnType="Decimal" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="1b0a2a03-c56e-4dc8-822b-a1ca0bc384b4">
+            <field Id="34ffb67a-d6be-48e5-bf6f-5127d85a7ee8" name="MaTK" virtualColumnType="THONG_KE" logicalType="THONG_KE" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
         </fields>
       </xpObject>

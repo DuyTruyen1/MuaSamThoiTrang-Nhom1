@@ -50,29 +50,20 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
             get { return fDonGia; }
             set { SetPropertyValue<decimal>(nameof(DonGia), ref fDonGia, value); }
         }
-        string fHinhAnh;
-        public string HinhAnh
-        {
-            get { return fHinhAnh; }
-            set { SetPropertyValue<string>(nameof(HinhAnh), ref fHinhAnh, value); }
-        }
+        
         string fDVT;
         public string DVT
         {
             get { return fDVT; }
             set { SetPropertyValue<string>(nameof(DVT), ref fDVT, value); }
         }
-        THONG_KE fMaTK;
-        [Association(@"SAN_PHAMReferencesTHONG_KE")]
-        public THONG_KE MaTK
+        string fMota;
+        public string Mota
         {
-            get { return fMaTK; }
-            set { SetPropertyValue<THONG_KE>(nameof(MaTK), ref fMaTK, value); }
+            get { return fMota; }
+            set { SetPropertyValue<string>(nameof(Mota), ref fMota, value); }
         }
-        [Association(@"KHO_HANGReferencesSAN_PHAM")]
-        public XPCollection<KHO_HANG> KHO_HANGs { get { return GetCollection<KHO_HANG>(nameof(KHO_HANGs)); } }
-        [Association(@"DAT_HANGReferencesSAN_PHAM")]
-        public XPCollection<DAT_HANG> DAT_HANGs { get { return GetCollection<DAT_HANG>(nameof(DAT_HANGs)); } }
+
         [Association(@"CT_DAT_HANGReferencesSAN_PHAM")]
         public XPCollection<CT_DAT_HANG> CT_DAT_HANGs { get { return GetCollection<CT_DAT_HANG>(nameof(CT_DAT_HANGs)); } }
     }

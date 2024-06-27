@@ -24,14 +24,16 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
             get { return fMaTK; }
             set { SetPropertyValue<string>(nameof(MaTK), ref fMaTK, value); }
         }
-        string fSoLuong;
-        public string SoLuong
+        DateTime fNgayTK;
+        public DateTime NgayTK
         {
-            get { return fSoLuong; }
-            set { SetPropertyValue<string>(nameof(SoLuong), ref fSoLuong, value); }
+            get { return fNgayTK; }
+            set { SetPropertyValue<DateTime>(nameof(NgayTK), ref fNgayTK, value); }
         }
-        [Association(@"SAN_PHAMReferencesTHONG_KE")]
-        public XPCollection<SAN_PHAM> SAN_PHAMs { get { return GetCollection<SAN_PHAM>(nameof(SAN_PHAMs)); } }
+        [Association(@"CT_DAT_HANGReferencesTHONG_KE")]
+        public XPCollection<CT_DAT_HANG> CT_DAT_HANGs { get { return GetCollection<CT_DAT_HANG>(nameof(CT_DAT_HANGs)); } }
+        [Association(@"DAT_HANGReferencesTHONG_KE")]
+        public XPCollection<DAT_HANG> DAT_HANGs { get { return GetCollection<DAT_HANG>(nameof(DAT_HANGs)); } }
     }
 
 }

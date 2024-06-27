@@ -31,18 +31,37 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
             get { return fLoaiHangDat; }
             set { SetPropertyValue<DAT_HANG>(nameof(LoaiHangDat), ref fLoaiHangDat, value); }
         }
-        SAN_PHAM fLoaiSP;
+        SAN_PHAM fMaSanPham;
         [Association(@"CT_DAT_HANGReferencesSAN_PHAM")]
-        public SAN_PHAM LoaiSP
+        public SAN_PHAM MaSanPham
         {
-            get { return fLoaiSP; }
-            set { SetPropertyValue<SAN_PHAM>(nameof(LoaiSP), ref fLoaiSP, value); }
+            get { return fMaSanPham; }
+            set { SetPropertyValue<SAN_PHAM>(nameof(MaSanPham), ref fMaSanPham, value); }
         }
         long fSoLuong;
         public long SoLuong
         {
             get { return fSoLuong; }
             set { SetPropertyValue<long>(nameof(SoLuong), ref fSoLuong, value); }
+        }
+        decimal fDonGia;
+        public Decimal DonGia
+        {
+            get { return fSoLuong; }
+            set { SetPropertyValue<decimal>(nameof(DonGia), ref fDonGia, value); }
+        }
+        decimal fTongTien;
+        public Decimal TongTien
+        {
+            get { return fTongTien; }
+            set { SetPropertyValue<decimal>(nameof(TongTien), ref fTongTien, value); }
+        }
+        THONG_KE fMaTk;
+        [Association(@"CT_DAT_HANGReferencesTHONG_KE")]
+        public THONG_KE MaTk
+        {
+            get { return fMaTk; }
+            set { SetPropertyValue<THONG_KE>(nameof(MaTk), ref fMaTk, value); }
         }
     }
 
