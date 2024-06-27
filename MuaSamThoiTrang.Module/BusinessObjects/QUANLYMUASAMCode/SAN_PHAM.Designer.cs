@@ -13,6 +13,7 @@ using DevExpress.Data.Filtering;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Reflection;
+using MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAMCode;
 namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
 {
 
@@ -44,6 +45,14 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
             get { return fMaDM; }
             set { SetPropertyValue<DANH_MUC>(nameof(MaDM), ref fMaDM, value); }
         }
+        NHA_CUNG_CAP fMaNhaCC;
+        [Association(@"SAN_PHAMReferencesNHA_CUNG_CAP")]
+        public NHA_CUNG_CAP MaNhaCC
+        {
+            get { return fMaNhaCC; }
+            set { SetPropertyValue<NHA_CUNG_CAP>(nameof(MaNhaCC), ref fMaNhaCC, value); }
+        }
+
         decimal fDonGia;
         public decimal DonGia
         {
@@ -63,9 +72,9 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
             get { return fMota; }
             set { SetPropertyValue<string>(nameof(Mota), ref fMota, value); }
         }
-
         [Association(@"CT_DAT_HANGReferencesSAN_PHAM")]
         public XPCollection<CT_DAT_HANG> CT_DAT_HANGs { get { return GetCollection<CT_DAT_HANG>(nameof(CT_DAT_HANGs)); } }
+
     }
 
 }

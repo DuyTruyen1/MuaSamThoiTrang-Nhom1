@@ -31,13 +31,7 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
             get { return fNguoiDat; }
             set { SetPropertyValue<USER>(nameof(NguoiDat), ref fNguoiDat, value); }
         }
-        SAN_PHAM fLoaiSP;
-        [Association(@"DAT_HANGReferencesSAN_PHAM")]
-        public SAN_PHAM LoaiSP
-        {
-            get { return fLoaiSP; }
-            set { SetPropertyValue<SAN_PHAM>(nameof(LoaiSP), ref fLoaiSP, value); }
-        }
+        
         DateTime fNgayDH;
         public DateTime NgayDH
         {

@@ -30,18 +30,7 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
             get { return fTen; }
             set { SetPropertyValue<string>(nameof(Ten), ref fTen, value); }
         }
-        string fEmail;
-        public string Email
-        {
-            get { return fEmail; }
-            set { SetPropertyValue<string>(nameof(Email), ref fEmail, value); }
-        }
-        string fPassword;
-        public string Password
-        {
-            get { return fPassword; }
-            set { SetPropertyValue<string>(nameof(Password), ref fPassword, value); }
-        }
+
         string fSoDT;
         public string SoDT
         {
@@ -53,6 +42,12 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
         {
             get { return fDiaChi; }
             set { SetPropertyValue<string>(nameof(DiaChi), ref fDiaChi, value); }
+        }
+        string fGhiChu;
+        public string GhiChu
+        {
+            get { return fGhiChu; }
+            set { SetPropertyValue<string>(nameof(GhiChu), ref fGhiChu, value); }
         }
         [Association(@"DANH_GIAReferencesUSER")]
         public XPCollection<DANH_GIA> DANH_GIAs { get { return GetCollection<DANH_GIA>(nameof(DANH_GIAs)); } }
