@@ -13,6 +13,7 @@ using DevExpress.Data.Filtering;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Reflection;
+using MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAMCode;
 namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
 {
 
@@ -30,6 +31,13 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
         {
             get { return fNguoiMua; }
             set { SetPropertyValue<USER>(nameof(NguoiMua), ref fNguoiMua, value); }
+        }
+        NHAN_VIEN fMaNV;
+        [Association(@"HOA_DONReferencesNHAN_VIEN")]
+        public NHAN_VIEN MaNV
+        {
+            get { return fMaNV; }
+            set { SetPropertyValue<NHAN_VIEN>(nameof(MaNV), ref fMaNV, value); }
         }
         DateTime fNgayLapHD;
         public DateTime NgayLapHD

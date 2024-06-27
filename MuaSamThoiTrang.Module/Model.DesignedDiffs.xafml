@@ -1,11 +1,64 @@
-﻿<?xml version="1.0" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Application Title="MuaSamThoiTrang">
   <BOModel>
     <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" Caption="Base User" />
   </BOModel>
+  <NavigationItems>
+    <Items>
+      <Item Id="@e680d3c6-b9bc-4775-9bc5-9acb317fbeb4" Caption="HÀNG" ImageName="BO_Product_Group" Index="0" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="SAN_PHAM_ListView" ViewId="SAN_PHAM_ListView" ObjectKey="" Index="0" IsNewNode="True" />
+          <Item Id="DANH_MUC_ListView" ViewId="DANH_MUC_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="THUONG_HIEU_ListView" ViewId="THUONG_HIEU_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="@25cd4a37-1396-4c94-bd61-ba9e853a4e85" Caption="NGƯỜI DÙNG" Index="1" ImageName="BO_Employee" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="USER_ListView" Caption="KHACH_HANG" ObjectKey="" ViewId="USER_ListView" Index="0" IsNewNode="True" />
+          <Item Id="NHAN_VIEN_ListView" ViewId="NHAN_VIEN_ListView" ObjectKey="" Index="1" IsNewNode="True" />
+          <Item Id="NHA_CUNG_CAP_ListView" ViewId="NHA_CUNG_CAP_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="@0ac92a0f-92d2-43d1-bac7-7e33644b7832" Caption="ĐƠN HÀNG" Index="2" ImageName="BO_Order" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="CT_DAT_HANG_ListView" ViewId="CT_DAT_HANG_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="DAT_HANG_ListView" ViewId="DAT_HANG_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="@2b1a40df-5d3b-49b7-86f6-c0025514a537" Caption="HÓA ĐƠN" Index="3" ImageName="BO_Sale_Item" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="HOA_DON_ListView" ViewId="HOA_DON_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="@0909c3af-ec42-47b8-86cc-bb585cd831ac" Caption="THỐNG KÊ VÀ ĐÁNH GIÁ" Index="4" ImageName="BO_Dashboard" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="DANH_GIA_ListView" ViewId="DANH_GIA_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="THONG_KE_ListView" ViewId="THONG_KE_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Default">
+        <Items>
+          <Item Id="CT_DAT_HANG_ListView" Removed="True" />
+          <Item Id="DANH_GIA_ListView" Removed="True" />
+          <Item Id="DANH_MUC_ListView" Removed="True" />
+          <Item Id="DAT_HANG_ListView" Removed="True" />
+          <Item Id="HOA_DON_ListView" Removed="True" />
+          <Item Id="NHA_CUNG_CAP_ListView" Removed="True" />
+          <Item Id="NHAN_VIEN_ListView" Removed="True" />
+          <Item Id="SAN_PHAM_ListView" Removed="True" />
+          <Item Id="THONG_KE_ListView" Removed="True" />
+          <Item Id="THUONG_HIEU_ListView" Removed="True" />
+          <Item Id="USER_ListView" Caption="KHACH_HANG" Removed="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
   <Options>
     <LayoutManagerOptions RequiredFieldMark="*" />
   </Options>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="24.1.3.0" IsNewNode="True" />
+  </SchemaModules>
   <Views>
     <ListView Id="ApplicationUser_ListView" Caption="Users" />
   </Views>
