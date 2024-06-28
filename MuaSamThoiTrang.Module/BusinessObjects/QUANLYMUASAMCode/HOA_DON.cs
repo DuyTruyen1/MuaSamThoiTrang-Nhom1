@@ -15,7 +15,7 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
         public HOA_DON(Session session) : base(session) { }
         public override void AfterConstruction()
         { base.AfterConstruction();
-            if (Session.IsNewObject(this))
+            if (Session.IsNewObject(this)) 
             {
                 NgayLapHD = DateTime.Now;
             }
