@@ -13,32 +13,35 @@ using DevExpress.Data.Filtering;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Reflection;
+using DevExpress.ExpressApp.DC;
 namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
 {
 
     public partial class CT_DAT_HANG : XPObject
     {
-        string fMaCT;
+        private string fMaCT;
+        [XafDisplayName("Mã chi tiết"), Size(100)]
         public string MaCT
         {
             get { return fMaCT; }
             set { SetPropertyValue<string>(nameof(MaCT), ref fMaCT, value); }
         }
         DAT_HANG fLoaiHangDat;
-        [Association(@"CT_DAT_HANGReferencesDAT_HANG")]
+        [Association(@"CT_DAT_HANGReferencesDAT_HANG"), XafDisplayName("Loại hàng đặt"), Size(100)]
         public DAT_HANG LoaiHangDat
         {
             get { return fLoaiHangDat; }
             set { SetPropertyValue<DAT_HANG>(nameof(LoaiHangDat), ref fLoaiHangDat, value); }
         }
         SAN_PHAM fLoaiSP;
-        [Association(@"CT_DAT_HANGReferencesSAN_PHAM")]
+        [Association(@"CT_DAT_HANGReferencesSAN_PHAM"), XafDisplayName("Loại sản phẩm"), Size(100)]
         public SAN_PHAM LoaiSP
         {
             get { return fLoaiSP; }
             set { SetPropertyValue<SAN_PHAM>(nameof(LoaiSP), ref fLoaiSP, value); }
         }
         long fSoLuong;
+        [XafDisplayName("Số lượng"), Size(100)]
         public long SoLuong
         {
             get { return fSoLuong; }

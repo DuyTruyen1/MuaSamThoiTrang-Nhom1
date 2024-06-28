@@ -13,22 +13,25 @@ using DevExpress.Data.Filtering;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Reflection;
+using DevExpress.ExpressApp.DC;
 namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
 {
 
     public partial class DANH_GIA : XPObject
     {
-        string fMaDG;
+        private string fMaDG;
+        [XafDisplayName("Mã đơn giá"),Size(100)]
         public string MaDG
         {
             get { return fMaDG; }
             set { SetPropertyValue<string>(nameof(MaDG), ref fMaDG, value); }
         }
-        string fMoTa;
+        private string fMota;
+        [XafDisplayName("Mô tả"),Size(100)]
         public string MoTa
         {
-            get { return fMoTa; }
-            set { SetPropertyValue<string>(nameof(MoTa), ref fMoTa, value); }
+            get { return fMota; }
+            set { SetPropertyValue<string>(nameof(MoTa), ref fMota, value); }
         }
         USER fUserID;
         [Association(@"DANH_GIAReferencesUSER")]

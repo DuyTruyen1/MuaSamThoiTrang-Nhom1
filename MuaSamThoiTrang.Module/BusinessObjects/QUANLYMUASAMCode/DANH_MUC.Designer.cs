@@ -13,18 +13,21 @@ using DevExpress.Data.Filtering;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Reflection;
+using DevExpress.ExpressApp.DC;
 namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
 {
 
     public partial class DANH_MUC : XPObject
     {
         string fMaDM;
+        [XafDisplayName("Mã danh mục"), Size(100)]
         public string MaDM
         {
             get { return fMaDM; }
             set { SetPropertyValue<string>(nameof(MaDM), ref fMaDM, value); }
         }
         string fTenDM;
+        [XafDisplayName("Tên danh mục"),Size(100)]
         public string TenDM
         {
             get { return fTenDM; }

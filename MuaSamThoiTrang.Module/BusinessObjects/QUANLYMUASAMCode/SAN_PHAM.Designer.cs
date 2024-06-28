@@ -13,57 +13,63 @@ using DevExpress.Data.Filtering;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Reflection;
+using DevExpress.ExpressApp.DC;
 namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
 {
 
     public partial class SAN_PHAM : XPObject
     {
         string fMaSP;
+        [XafDisplayName("Mã sản phẩm"), Size(100)]
         public string MaSP
         {
             get { return fMaSP; }
             set { SetPropertyValue<string>(nameof(MaSP), ref fMaSP, value); }
         }
         string fTenSP;
+        [XafDisplayName("Tên sản phẩm"), Size(100)]
         public string TenSP
         {
             get { return fTenSP; }
             set { SetPropertyValue<string>(nameof(TenSP), ref fTenSP, value); }
         }
         THUONG_HIEU fMaTH;
-        [Association(@"SAN_PHAMReferencesTHUONG_HIEU")]
+        [Association(@"SAN_PHAMReferencesTHUONG_HIEU"),XafDisplayName("Mã thương hiệu"), Size(100)]
         public THUONG_HIEU MaTH
         {
             get { return fMaTH; }
             set { SetPropertyValue<THUONG_HIEU>(nameof(MaTH), ref fMaTH, value); }
         }
         DANH_MUC fMaDM;
-        [Association(@"SAN_PHAMReferencesDANH_MUC")]
+        [Association(@"SAN_PHAMReferencesDANH_MUC"),XafDisplayName("Mã danh mục"), Size(100)]
         public DANH_MUC MaDM
         {
             get { return fMaDM; }
             set { SetPropertyValue<DANH_MUC>(nameof(MaDM), ref fMaDM, value); }
         }
         decimal fDonGia;
+        [XafDisplayName("Đơn giá"), Size(100)]
         public decimal DonGia
         {
             get { return fDonGia; }
             set { SetPropertyValue<decimal>(nameof(DonGia), ref fDonGia, value); }
         }
         string fHinhAnh;
+        [XafDisplayName("Hình ảnh"), Size(100)]
         public string HinhAnh
         {
             get { return fHinhAnh; }
             set { SetPropertyValue<string>(nameof(HinhAnh), ref fHinhAnh, value); }
         }
         string fDVT;
+        [XafDisplayName("Đơn vị tính"), Size(100)]
         public string DVT
         {
             get { return fDVT; }
             set { SetPropertyValue<string>(nameof(DVT), ref fDVT, value); }
         }
         THONG_KE fMaTK;
-        [Association(@"SAN_PHAMReferencesTHONG_KE")]
+        [Association(@"SAN_PHAMReferencesTHONG_KE"),XafDisplayName("Mã thống kê"), Size(100)]
         public THONG_KE MaTK
         {
             get { return fMaTK; }

@@ -15,5 +15,4 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
         public DANH_GIA(Session session) : base(session) { }
         public override void AfterConstruction() { base.AfterConstruction(); }
     }
-
 }

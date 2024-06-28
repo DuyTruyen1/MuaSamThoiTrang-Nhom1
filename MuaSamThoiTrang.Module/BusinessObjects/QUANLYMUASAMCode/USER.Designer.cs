@@ -13,6 +13,7 @@ using DevExpress.Data.Filtering;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Reflection;
+using DevExpress.ExpressApp.DC;
 namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
 {
 
@@ -25,6 +26,7 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
             set { SetPropertyValue<string>(nameof(UserID), ref fUserID, value); }
         }
         string fTen;
+        [XafDisplayName("Tên"), Size(100)]
         public string Ten
         {
             get { return fTen; }
@@ -43,12 +45,14 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
             set { SetPropertyValue<string>(nameof(Password), ref fPassword, value); }
         }
         string fSoDT;
+        [XafDisplayName("Số điện thoại"), Size(100)]
         public string SoDT
         {
             get { return fSoDT; }
             set { SetPropertyValue<string>(nameof(SoDT), ref fSoDT, value); }
         }
         string fDiaChi;
+        [XafDisplayName("Địa chỉ"), Size(100)]
         public string DiaChi
         {
             get { return fDiaChi; }
