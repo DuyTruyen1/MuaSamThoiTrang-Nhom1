@@ -10,3 +10,16 @@ D:\CS403K\MuaSamThoiTrang\MuaSamThoiTrang.Module\obj\Debug\net8.0\MuaSamThoiTran
 D:\CS403K\MuaSamThoiTrang\MuaSamThoiTrang.Module\obj\Debug\net8.0\refint\MuaSamThoiTrang.Module.dll
 D:\CS403K\MuaSamThoiTrang\MuaSamThoiTrang.Module\obj\Debug\net8.0\MuaSamThoiTrang.Module.pdb
 D:\CS403K\MuaSamThoiTrang\MuaSamThoiTrang.Module\obj\Debug\net8.0\ref\MuaSamThoiTrang.Module.dll
+C:\Users\HOANGVANDUNG\source\repos\MuaSamThoiTrang-Nhom1\MuaSamThoiTrang.Module\bin\Debug\net8.0\MuaSamThoiTrang.Module.deps.json
+C:\Users\HOANGVANDUNG\source\repos\MuaSamThoiTrang-Nhom1\MuaSamThoiTrang.Module\bin\Debug\net8.0\MuaSamThoiTrang.Module.dll
+C:\Users\HOANGVANDUNG\source\repos\MuaSamThoiTrang-Nhom1\MuaSamThoiTrang.Module\bin\Debug\net8.0\MuaSamThoiTrang.Module.pdb
+C:\Users\HOANGVANDUNG\source\repos\MuaSamThoiTrang-Nhom1\MuaSamThoiTrang.Module\obj\Debug\net8.0\MuaSamThoiTrang.Module.csproj.AssemblyReference.cache
+C:\Users\HOANGVANDUNG\source\repos\MuaSamThoiTrang-Nhom1\MuaSamThoiTrang.Module\obj\Debug\net8.0\MuaSamThoiTrang.Module.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HOANGVANDUNG\source\repos\MuaSamThoiTrang-Nhom1\MuaSamThoiTrang.Module\obj\Debug\net8.0\MuaSamThoiTrang.Module.AssemblyInfoInputs.cache
+C:\Users\HOANGVANDUNG\source\repos\MuaSamThoiTrang-Nhom1\MuaSamThoiTrang.Module\obj\Debug\net8.0\MuaSamThoiTrang.Module.AssemblyInfo.cs
+C:\Users\HOANGVANDUNG\source\repos\MuaSamThoiTrang-Nhom1\MuaSamThoiTrang.Module\obj\Debug\net8.0\MuaSamThoiTrang.Module.csproj.CoreCompileInputs.cache
+C:\Users\HOANGVANDUNG\source\repos\MuaSamThoiTrang-Nhom1\MuaSamThoiTrang.Module\obj\Debug\net8.0\MuaSamThoiTrang.Module.sourcelink.json
+C:\Users\HOANGVANDUNG\source\repos\MuaSamThoiTrang-Nhom1\MuaSamThoiTrang.Module\obj\Debug\net8.0\MuaSamThoiTrang.Module.dll
+C:\Users\HOANGVANDUNG\source\repos\MuaSamThoiTrang-Nhom1\MuaSamThoiTrang.Module\obj\Debug\net8.0\refint\MuaSamThoiTrang.Module.dll
+C:\Users\HOANGVANDUNG\source\repos\MuaSamThoiTrang-Nhom1\MuaSamThoiTrang.Module\obj\Debug\net8.0\MuaSamThoiTrang.Module.pdb
+C:\Users\HOANGVANDUNG\source\repos\MuaSamThoiTrang-Nhom1\MuaSamThoiTrang.Module\obj\Debug\net8.0\ref\MuaSamThoiTrang.Module.dll
