@@ -14,18 +14,22 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Reflection;
 using MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAMCode;
+using DevExpress.ExpressApp.DC;
 namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
 {
 
     public partial class SAN_PHAM : XPObject
     {
         string fMaSP;
+        [XafDisplayName("Mã sản phẩm"), Size(100)]
         public string MaSP
         {
             get { return fMaSP; }
             set { SetPropertyValue<string>(nameof(MaSP), ref fMaSP, value); }
         }
         string fTenSP;
+        [XafDisplayName("Tên sản phẩm"), Size(100)]
+
         public string TenSP
         {
             get { return fTenSP; }
@@ -54,6 +58,8 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
         }
 
         decimal fDonGia;
+        [XafDisplayName("Đơn giá"), Size(100)]
+
         public decimal DonGia
         {
             get { return fDonGia; }
@@ -61,12 +67,16 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
         }
         
         string fDVT;
+        [XafDisplayName("Đơn vị tính"), Size(100)]
+
         public string DVT
         {
             get { return fDVT; }
             set { SetPropertyValue<string>(nameof(DVT), ref fDVT, value); }
         }
         string fMota;
+        [XafDisplayName("Mô tả"), Size(100)]
+
         public string Mota
         {
             get { return fMota; }
