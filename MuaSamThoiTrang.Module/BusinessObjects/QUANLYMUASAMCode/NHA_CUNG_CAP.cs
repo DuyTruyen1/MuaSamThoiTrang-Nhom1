@@ -30,18 +30,21 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAMCode
         }
 
         string fMaNhaCC;
+        [XafDisplayName("Mã nhà cung cấp")]
         public string MaNhaCC
         {
             get { return fMaNhaCC; }
             set { SetPropertyValue<string>(nameof(MaNhaCC), ref fMaNhaCC, value); }
         }
         string fTenNhaCC;
+        [XafDisplayName("Tên nhà cung cấp")]
         public string TenNhaCC
         {
             get { return fTenNhaCC; }
             set { SetPropertyValue<string>(nameof(TenNhaCC), ref fTenNhaCC, value); }
         }
         string fDiaChi;
+        [XafDisplayName("Địa chỉ")]
         public string DiaChi
         {
             get { return fDiaChi; }
