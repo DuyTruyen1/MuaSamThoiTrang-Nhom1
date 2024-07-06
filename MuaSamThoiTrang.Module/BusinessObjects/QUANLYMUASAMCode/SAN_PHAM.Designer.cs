@@ -14,24 +14,35 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Reflection;
 using MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAMCode;
+using DevExpress.ExpressApp;
+using DevExpress.Persistent.Base;
+using DevExpress.ExpressApp.DC;
+using DevExpress.ExpressApp.Model;
 namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
 {
+    [DefaultClassOptions]
+    [System.ComponentModel.DisplayName("Sản phẩm")]
+    [DefaultListViewOptions(MasterDetailMode.ListViewOnly, true, NewItemRowPosition.Top)]
+    [DefaultProperty("TenSP")]
 
     public partial class SAN_PHAM : XPObject
     {
         string fMaSP;
+        [XafDisplayName("Mã sản phẩm")]
         public string MaSP
         {
             get { return fMaSP; }
             set { SetPropertyValue<string>(nameof(MaSP), ref fMaSP, value); }
         }
         string fTenSP;
+        [XafDisplayName("Tên sản phẩm")]
         public string TenSP
         {
             get { return fTenSP; }
             set { SetPropertyValue<string>(nameof(TenSP), ref fTenSP, value); }
         }
         THUONG_HIEU fMaTH;
+        [XafDisplayName("Thương hiệu")]
         [Association(@"SAN_PHAMReferencesTHUONG_HIEU")]
         public THUONG_HIEU MaTH
         {
@@ -39,21 +50,18 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
             set { SetPropertyValue<THUONG_HIEU>(nameof(MaTH), ref fMaTH, value); }
         }
         DANH_MUC fMaDM;
+        [XafDisplayName("Danh mục")]
         [Association(@"SAN_PHAMReferencesDANH_MUC")]
         public DANH_MUC MaDM
         {
             get { return fMaDM; }
             set { SetPropertyValue<DANH_MUC>(nameof(MaDM), ref fMaDM, value); }
         }
-        NHA_CUNG_CAP fMaNhaCC;
-        [Association(@"SAN_PHAMReferencesNHA_CUNG_CAP")]
-        public NHA_CUNG_CAP MaNhaCC
-        {
-            get { return fMaNhaCC; }
-            set { SetPropertyValue<NHA_CUNG_CAP>(nameof(MaNhaCC), ref fMaNhaCC, value); }
-        }
+        
 
         decimal fDonGia;
+        [XafDisplayName("Đơn giá")]
+        [ModelDefault("DisplayFormat", "{0:### ### ### ###}")]
         public decimal DonGia
         {
             get { return fDonGia; }
@@ -61,12 +69,14 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
         }
         
         string fDVT;
+        [XafDisplayName("Đơn vị tính")]
         public string DVT
         {
             get { return fDVT; }
             set { SetPropertyValue<string>(nameof(DVT), ref fDVT, value); }
         }
         string fMota;
+        [XafDisplayName("Mô tả")]
         public string Mota
         {
             get { return fMota; }

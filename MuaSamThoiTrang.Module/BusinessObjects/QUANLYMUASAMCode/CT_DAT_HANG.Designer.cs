@@ -13,12 +13,21 @@ using DevExpress.Data.Filtering;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Reflection;
+using DevExpress.ExpressApp.DC;
+using DevExpress.ExpressApp;
+using DevExpress.Persistent.Validation;
+using DevExpress.ExpressApp.Model;
 namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
 {
+    [System.ComponentModel.DisplayName("Chi tiết đặt hàng")]
+    [DefaultListViewOptions(MasterDetailMode.ListViewOnly, true, NewItemRowPosition.Top)]
+    [DefaultProperty("MaCT")]
 
     public partial class CT_DAT_HANG : XPObject
     {
         string fMaCT;
+        [XafDisplayName("Mã chi tiết")]
+        [RuleRequiredField("Yeucau MaCT", DefaultContexts.Save, "Phải có mã chi tiết")]
         public string MaCT
         {
             get { return fMaCT; }
@@ -26,6 +35,7 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
         }
         DAT_HANG fLoaiHangDat;
         [Association(@"CT_DAT_HANGReferencesDAT_HANG")]
+        [XafDisplayName("Mã đặt hàng")]
         public DAT_HANG LoaiHangDat
         {
             get { return fLoaiHangDat; }
@@ -33,35 +43,63 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
         }
         SAN_PHAM fMaSanPham;
         [Association(@"CT_DAT_HANGReferencesSAN_PHAM")]
+        [XafDisplayName("Sản phẩm")]
         public SAN_PHAM MaSanPham
         {
             get { return fMaSanPham; }
             set { SetPropertyValue<SAN_PHAM>(nameof(MaSanPham), ref fMaSanPham, value); }
         }
         long fSoLuong;
+        [XafDisplayName("Số lượng")]
         public long SoLuong
         {
             get { return fSoLuong; }
-            set { SetPropertyValue<long>(nameof(SoLuong), ref fSoLuong, value); }
+            set 
+            {
+                bool isModified = SetPropertyValue<long>(nameof(SoLuong), ref fSoLuong, value);
+                if(!IsLoading && !IsDeleted && !IsSaving)
+                {
+                    Tinhdong();
+                }
+            }
         }
         decimal fDonGia;
+        [XafDisplayName("Đơn giá")]
+        [ModelDefault("DisplayFormat", "{0:### ### ### ###}")]
         public Decimal DonGia
         {
-            get { return fSoLuong; }
-            set { SetPropertyValue<decimal>(nameof(DonGia), ref fDonGia, value); }
+            get { return fDonGia; }
+            set { bool isModified = SetPropertyValue<decimal>(nameof(DonGia), ref fDonGia, value); }
         }
         decimal fTongTien;
+        [XafDisplayName("Tổng tiền")]
+        [ModelDefault("DisplayFormat", "{0:### ### ### ###}")]
         public Decimal TongTien
         {
             get { return fTongTien; }
             set { SetPropertyValue<decimal>(nameof(TongTien), ref fTongTien, value); }
         }
+        private void Tinhdong()
+        {
+            decimal tien = 0;
+            tien = (decimal)SoLuong * DonGia;
+            TongTien = tien;
+        }
         THONG_KE fMaTk;
         [Association(@"CT_DAT_HANGReferencesTHONG_KE")]
+        [XafDisplayName("Mã thống kê")]
         public THONG_KE MaTk
         {
             get { return fMaTk; }
             set { SetPropertyValue<THONG_KE>(nameof(MaTk), ref fMaTk, value); }
+        }
+        HOA_DON fMaHD;
+        [Association(@"CT_DAT_HANGReferencesHOA_DON")]
+        [XafDisplayName("Mã hóa đơn")]
+        public HOA_DON MaHD
+        {
+            get { return fMaHD; }
+            set { SetPropertyValue<HOA_DON>(nameof(MaHD), ref fMaHD, value); }
         }
     }
 

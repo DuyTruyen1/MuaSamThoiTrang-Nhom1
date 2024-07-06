@@ -13,18 +13,27 @@ using DevExpress.Data.Filtering;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Reflection;
+using DevExpress.ExpressApp;
+using DevExpress.ExpressApp.DC;
+using DevExpress.Persistent.Validation;
 namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
 {
+    [System.ComponentModel.DisplayName("Khách hàng")]
+    [DefaultListViewOptions(MasterDetailMode.ListViewOnly, true, NewItemRowPosition.Top)]
+    [DefaultProperty("Ten")]
 
     public partial class USER : XPObject
     {
         string fUserID;
+        [XafDisplayName("Mã khách")]
+        [RuleRequiredField("Yeucau UserID", DefaultContexts.Save, "Phải có mã khách hàng")]
         public string UserID
         {
             get { return fUserID; }
             set { SetPropertyValue<string>(nameof(UserID), ref fUserID, value); }
         }
         string fTen;
+        [XafDisplayName("Tên khách")]
         public string Ten
         {
             get { return fTen; }
@@ -32,18 +41,21 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
         }
 
         string fSoDT;
+        [XafDisplayName("Số điện thoại")]
         public string SoDT
         {
             get { return fSoDT; }
             set { SetPropertyValue<string>(nameof(SoDT), ref fSoDT, value); }
         }
         string fDiaChi;
+        [XafDisplayName("Địa chỉ")]
         public string DiaChi
         {
             get { return fDiaChi; }
             set { SetPropertyValue<string>(nameof(DiaChi), ref fDiaChi, value); }
         }
         string fGhiChu;
+        [XafDisplayName("Ghi chú")]
         public string GhiChu
         {
             get { return fGhiChu; }

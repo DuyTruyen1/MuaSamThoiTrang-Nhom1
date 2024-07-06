@@ -31,6 +31,11 @@ public class Startup {
             builder.UseApplication<MuaSamThoiTrangBlazorApplication>();
             builder.Modules
                 .AddConditionalAppearance()
+                .AddReports(options => {
+                    options.EnableInplaceReports = true;
+                    options.ReportDataType = typeof(DevExpress.Persistent.BaseImpl.ReportDataV2);
+                    options.ReportStoreMode = DevExpress.ExpressApp.ReportsV2.ReportStoreModes.XML;
+                })
                 .AddValidation(options => {
                     options.AllowValidationDetailsAccess = false;
                 })

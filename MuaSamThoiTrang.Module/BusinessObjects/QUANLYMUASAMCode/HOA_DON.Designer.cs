@@ -14,18 +14,27 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Reflection;
 using MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAMCode;
+using DevExpress.ExpressApp;
+using DevExpress.ExpressApp.DC;
+using DevExpress.Persistent.Validation;
+using DevExpress.ExpressApp.Model;
 namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
 {
-
+    [System.ComponentModel.DisplayName("Hóa đơn")]
+    [DefaultListViewOptions(MasterDetailMode.ListViewOnly, true, NewItemRowPosition.Top)]
+    [DefaultProperty("MaHD")]
     public partial class HOA_DON : XPObject
     {
         string fMaHD;
+        [XafDisplayName("Mã hóa đơn")]
+        [RuleRequiredField("Yeucau MaHD", DefaultContexts.Save, "Phải có mã hóa đơn")]
         public string MaHD
         {
             get { return fMaHD; }
             set { SetPropertyValue<string>(nameof(MaHD), ref fMaHD, value); }
         }
         USER fNguoiMua;
+        [XafDisplayName("Khách hàng")]
         [Association(@"HOA_DONReferencesUSER")]
         public USER NguoiMua
         {
@@ -33,6 +42,7 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
             set { SetPropertyValue<USER>(nameof(NguoiMua), ref fNguoiMua, value); }
         }
         NHAN_VIEN fMaNV;
+        [XafDisplayName("Nhân viên")]
         [Association(@"HOA_DONReferencesNHAN_VIEN")]
         public NHAN_VIEN MaNV
         {
@@ -40,18 +50,33 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
             set { SetPropertyValue<NHAN_VIEN>(nameof(MaNV), ref fMaNV, value); }
         }
         DateTime fNgayLapHD;
+        [XafDisplayName("Ngày lập HD")]
+        [ModelDefault("EditMask", "dd/MM/yyyy HH:mm")]
+        [ModelDefault("DisplayFormat", "{0:dd/MM/yyyy HH:mm}")]
         public DateTime NgayLapHD
         {
             get { return fNgayLapHD; }
             set { SetPropertyValue<DateTime>(nameof(NgayLapHD), ref fNgayLapHD, value); }
         }
-        DAT_HANG fThongTinHangDat;
-        [Association(@"HOA_DONReferencesDAT_HANG")]
-        public DAT_HANG ThongTinHangDat
+        Decimal fTongTien;
+        [XafDisplayName("Tổng tiền")]
+        [ModelDefault("DisplayFormat", "{0:### ### ### ###}")]
+        public Decimal TongTien
         {
-            get { return fThongTinHangDat; }
-            set { SetPropertyValue<DAT_HANG>(nameof(ThongTinHangDat), ref fThongTinHangDat, value); }
+            get { return fTongTien; }
+            set { SetPropertyValue<decimal>(nameof(TongTien), ref fTongTien, value); }
         }
+        public void tinhTong()
+        {
+            decimal tong = 0;
+            foreach(CT_DAT_HANG ct in CT_DAT_HANGs)
+            {          
+                    tong += ct.TongTien;
+            }
+            TongTien = tong;
+        }
+        [Association(@"CT_DAT_HANGReferencesHOA_DON")]
+        public XPCollection<CT_DAT_HANG> CT_DAT_HANGs { get { return GetCollection<CT_DAT_HANG>(nameof(CT_DAT_HANGs)); } }
     }
 
 }
