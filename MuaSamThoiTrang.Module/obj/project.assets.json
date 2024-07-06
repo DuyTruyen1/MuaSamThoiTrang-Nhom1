@@ -3665,11 +3665,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CS403K\\MuaSamThoiTrang\\MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\MuaSamThoiTrang-Nhom1\\MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj",
       "projectName": "MuaSamThoiTrang.Module",
-      "projectPath": "D:\\CS403K\\MuaSamThoiTrang\\MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj",
+      "projectPath": "C:\\Users\\Admin\\source\\repos\\MuaSamThoiTrang-Nhom1\\MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\CS403K\\MuaSamThoiTrang\\MuaSamThoiTrang.Module\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\source\\repos\\MuaSamThoiTrang-Nhom1\\MuaSamThoiTrang.Module\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages"
