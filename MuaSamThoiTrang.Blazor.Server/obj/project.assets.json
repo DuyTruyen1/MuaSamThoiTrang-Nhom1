@@ -5163,11 +5163,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CS403K\\MuaSamThoiTrang\\MuaSamThoiTrang.Blazor.Server\\MuaSamThoiTrang.Blazor.Server.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\MuaSamThoiTrang-Nhom1\\MuaSamThoiTrang.Blazor.Server\\MuaSamThoiTrang.Blazor.Server.csproj",
       "projectName": "MuaSamThoiTrang.Blazor.Server",
-      "projectPath": "D:\\CS403K\\MuaSamThoiTrang\\MuaSamThoiTrang.Blazor.Server\\MuaSamThoiTrang.Blazor.Server.csproj",
+      "projectPath": "C:\\Users\\Admin\\source\\repos\\MuaSamThoiTrang-Nhom1\\MuaSamThoiTrang.Blazor.Server\\MuaSamThoiTrang.Blazor.Server.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\CS403K\\MuaSamThoiTrang\\MuaSamThoiTrang.Blazor.Server\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\source\\repos\\MuaSamThoiTrang-Nhom1\\MuaSamThoiTrang.Blazor.Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages"
@@ -5190,8 +5190,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\CS403K\\MuaSamThoiTrang\\MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj": {
-              "projectPath": "D:\\CS403K\\MuaSamThoiTrang\\MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj"
+            "C:\\Users\\Admin\\source\\repos\\MuaSamThoiTrang-Nhom1\\MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj": {
+              "projectPath": "C:\\Users\\Admin\\source\\repos\\MuaSamThoiTrang-Nhom1\\MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj"
             }
           }
         }
