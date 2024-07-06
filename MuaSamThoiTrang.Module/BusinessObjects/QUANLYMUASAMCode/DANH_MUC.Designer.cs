@@ -14,9 +14,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Reflection;
 using DevExpress.ExpressApp.DC;
+using DevExpress.ExpressApp;
 namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
 {
-
+    [System.ComponentModel.DisplayName("Danh mục hàng")]
+    [DefaultListViewOptions(MasterDetailMode.ListViewOnly, true, NewItemRowPosition.Top)]
+    [DefaultProperty("TenDM")]
     public partial class DANH_MUC : XPObject
     {
         string fMaDM;
@@ -27,6 +30,7 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
             set { SetPropertyValue<string>(nameof(MaDM), ref fMaDM, value); }
         }
         string fTenDM;
+        [XafDisplayName("Tên danh mục")]
         public string TenDM
         {
             get { return fTenDM; }

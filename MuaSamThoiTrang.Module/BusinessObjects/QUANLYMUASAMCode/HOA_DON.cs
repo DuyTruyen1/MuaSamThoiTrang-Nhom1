@@ -12,14 +12,30 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
 
     public partial class HOA_DON
     {
+<<<<<<< HEAD
         public HOA_DON(Session session) : base(session) {}
         public override void AfterConstruction()
         { base.AfterConstruction();
             if (Session.IsNewObject(this)) 
+=======
+        public HOA_DON(Session session) : base(session) { }
+        public override void AfterConstruction()
+        { base.AfterConstruction();
+            if(Session.IsNewObject(this))
+>>>>>>> 41fd1856b43042ac3e5b0b3ac523503b0f4f9f58
             {
                 NgayLapHD = DateTime.Now;
             }
         }
+<<<<<<< HEAD
+=======
+        protected override void OnSaving()
+        {
+           
+            base.OnSaving();
+            tinhTong();
+        }
+>>>>>>> 41fd1856b43042ac3e5b0b3ac523503b0f4f9f58
     }
 
 }

@@ -13,20 +13,35 @@ using DevExpress.Data.Filtering;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Reflection;
+<<<<<<< HEAD
 using DevExpress.ExpressApp.DC;
+=======
+using DevExpress.ExpressApp;
+using DevExpress.ExpressApp.DC;
+using DevExpress.Persistent.Validation;
+>>>>>>> 41fd1856b43042ac3e5b0b3ac523503b0f4f9f58
 namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
 {
+    [System.ComponentModel.DisplayName("Khách hàng")]
+    [DefaultListViewOptions(MasterDetailMode.ListViewOnly, true, NewItemRowPosition.Top)]
+    [DefaultProperty("Ten")]
 
     public partial class USER : XPObject
     {
         string fUserID;
+        [XafDisplayName("Mã khách")]
+        [RuleRequiredField("Yeucau UserID", DefaultContexts.Save, "Phải có mã khách hàng")]
         public string UserID
         {
             get { return fUserID; }
             set { SetPropertyValue<string>(nameof(UserID), ref fUserID, value); }
         }
         string fTen;
+<<<<<<< HEAD
         [XafDisplayName("Tên")]
+=======
+        [XafDisplayName("Tên khách")]
+>>>>>>> 41fd1856b43042ac3e5b0b3ac523503b0f4f9f58
         public string Ten
         {
             get { return fTen; }
@@ -34,7 +49,11 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
         }
 
         string fSoDT;
+<<<<<<< HEAD
         [XafDisplayName("Sô điện thoại")]
+=======
+        [XafDisplayName("Số điện thoại")]
+>>>>>>> 41fd1856b43042ac3e5b0b3ac523503b0f4f9f58
         public string SoDT
         {
             get { return fSoDT; }

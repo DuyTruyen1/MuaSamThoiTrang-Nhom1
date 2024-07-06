@@ -13,7 +13,13 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
     public partial class DAT_HANG
     {
         public DAT_HANG(Session session) : base(session) { }
-        public override void AfterConstruction() { base.AfterConstruction(); }
+        public override void AfterConstruction()
+        { base.AfterConstruction();
+            if (Session.IsNewObject(this))
+            {
+                NgayDH = DateTime.Now;
+            }
+        }
     }
 
 }

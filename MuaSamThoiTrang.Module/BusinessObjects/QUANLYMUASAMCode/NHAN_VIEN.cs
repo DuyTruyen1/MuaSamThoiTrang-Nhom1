@@ -16,7 +16,9 @@ using System.Text;
 namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAMCode
 {
     [DefaultClassOptions]
-    [DefaultProperty("MaNV")]
+    [System.ComponentModel.DisplayName("Nhân viên")]
+    [DefaultListViewOptions(MasterDetailMode.ListViewOnly, true, NewItemRowPosition.Top)]
+    [DefaultProperty("Ten")]
     public class NHAN_VIEN : BaseObject
     { 
         public NHAN_VIEN(Session session)
@@ -30,6 +32,10 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAMCode
         }
         string fMaNV;
         [XafDisplayName("Mã nhân viên")]
+<<<<<<< HEAD
+=======
+        [RuleRequiredField("Yeucau MaNV", DefaultContexts.Save, "Phải có mã nhân viên")]
+>>>>>>> 41fd1856b43042ac3e5b0b3ac523503b0f4f9f58
         public string MaNV
         {
             get { return fMaNV; }
@@ -43,7 +49,11 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAMCode
             set { SetPropertyValue<string>(nameof(TaiKhoan), ref fTaiKhoan, value); }
         }
         string fTen;
+<<<<<<< HEAD
         [XafDisplayName("Tên")]
+=======
+        [XafDisplayName("Tên nhân viên")]
+>>>>>>> 41fd1856b43042ac3e5b0b3ac523503b0f4f9f58
         public string Ten
         {
             get { return fTen; }

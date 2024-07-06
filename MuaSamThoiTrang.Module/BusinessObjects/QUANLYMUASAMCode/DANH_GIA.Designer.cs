@@ -13,27 +13,42 @@ using DevExpress.Data.Filtering;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Reflection;
+<<<<<<< HEAD
+=======
+using DevExpress.ExpressApp;
+>>>>>>> 41fd1856b43042ac3e5b0b3ac523503b0f4f9f58
 using DevExpress.ExpressApp.DC;
 namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
 {
-
+    [System.ComponentModel.DisplayName("Đánh giá")]
+    [DefaultListViewOptions(MasterDetailMode.ListViewOnly, true, NewItemRowPosition.Top)]
+    [DefaultProperty("MaDG")]
     public partial class DANH_GIA : XPObject
     {
         string fMaDG;
+<<<<<<< HEAD
         [XafDisplayName("Mã danh mục")]
+=======
+        [XafDisplayName("Mã đánh giá")]
+>>>>>>> 41fd1856b43042ac3e5b0b3ac523503b0f4f9f58
         public string MaDG
         {
             get { return fMaDG; }
             set { SetPropertyValue<string>(nameof(MaDG), ref fMaDG, value); }
         }
         string fMoTa;
+<<<<<<< HEAD
         [XafDisplayName("Mô tả")]
+=======
+        [XafDisplayName("Mã mô tả")]
+>>>>>>> 41fd1856b43042ac3e5b0b3ac523503b0f4f9f58
         public string MoTa
         {
             get { return fMoTa; }
             set { SetPropertyValue<string>(nameof(MoTa), ref fMoTa, value); }
         }
         USER fUserID;
+        [XafDisplayName("Khách hàng")]
         [Association(@"DANH_GIAReferencesUSER")]
         public USER UserID
         {
