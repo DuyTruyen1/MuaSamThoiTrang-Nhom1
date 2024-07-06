@@ -29,36 +29,42 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAMCode
             // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).
         }
         string fMaNV;
+        [XafDisplayName("Mã nhân viên")]
         public string MaNV
         {
             get { return fMaNV; }
             set { SetPropertyValue<string>(nameof(MaNV), ref fMaNV, value); }
         }
         string fTaiKhoan;
+        [XafDisplayName("Tài khoản")]
         public string TaiKhoan
         {
             get { return fTaiKhoan; }
             set { SetPropertyValue<string>(nameof(TaiKhoan), ref fTaiKhoan, value); }
         }
         string fTen;
+        [XafDisplayName("Tên")]
         public string Ten
         {
             get { return fTen; }
             set { SetPropertyValue<string>(nameof(Ten), ref fTen, value); }
         }
         string fDiaChi;
+        [XafDisplayName("Địa chỉ")]
         public string DiaChi
         {
             get { return fDiaChi; }
             set { SetPropertyValue<string>(nameof(DiaChi), ref fDiaChi, value); }
         }
         string fDienThoai;
+        [XafDisplayName("Điện thoại")]
         public string DienThoai
         {
             get { return fDienThoai; }
             set { SetPropertyValue<string>(nameof(DienThoai), ref fDienThoai, value); }
         }
         string fGhiChu;
+        [XafDisplayName("Ghi chú")]
         public string GhiChu
         {
             get { return fGhiChu; }

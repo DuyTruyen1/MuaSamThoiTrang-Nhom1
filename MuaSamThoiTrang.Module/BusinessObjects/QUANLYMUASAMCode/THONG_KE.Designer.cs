@@ -25,12 +25,14 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
             get { return fMaTK; }
             set { SetPropertyValue<string>(nameof(MaTK), ref fMaTK, value); }
         }
+
         DateTime fNgayTK;
         public DateTime NgayTK
         {
             get { return fNgayTK; }
             set { SetPropertyValue<DateTime>(nameof(NgayTK), ref fNgayTK, value); }
         }
+
         NHAN_VIEN fMaNV;
         [Association(@"THONG_KEReferencesNHAN_VIEN")]
         public NHAN_VIEN MaNV
@@ -41,7 +43,24 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
         [Association(@"CT_DAT_HANGReferencesTHONG_KE")]
         public XPCollection<CT_DAT_HANG> CT_DAT_HANGs { get { return GetCollection<CT_DAT_HANG>(nameof(CT_DAT_HANGs)); } }
         [Association(@"DAT_HANGReferencesTHONG_KE")]
-        public XPCollection<DAT_HANG> DAT_HANGs { get { return GetCollection<DAT_HANG>(nameof(DAT_HANGs)); } }
-    }
 
+        public XPCollection<DAT_HANG> DAT_HANGs { get { return GetCollection<DAT_HANG>(nameof(DAT_HANGs)); } }
+
+         int fSoDonHang;
+
+        public int SoDonHang
+        {
+            get { return fSoDonHang; }
+            set { SetPropertyValue<int>(nameof(SoDonHang), ref fSoDonHang, value); }
+        }
+        public void UpdateSoDonHang()
+        {
+            if (Session != null)
+            {
+                CriteriaOperator criteria = CriteriaOperator.Parse("MaTK == ?", MaTK);
+                int count = (int)Session.Evaluate<DAT_HANG>(CriteriaOperator.Parse("Count()"), criteria);
+                SoDonHang = count;
+            }
+        }
+    }
 }

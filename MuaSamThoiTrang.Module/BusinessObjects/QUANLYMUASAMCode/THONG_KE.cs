@@ -14,6 +14,7 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
     {
         public THONG_KE(Session session) : base(session) { }
         public override void AfterConstruction() { base.AfterConstruction(); }
+
     }
 
 }
