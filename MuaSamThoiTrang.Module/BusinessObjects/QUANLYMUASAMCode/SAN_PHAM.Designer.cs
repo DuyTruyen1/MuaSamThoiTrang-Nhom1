@@ -14,28 +14,48 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Reflection;
 using MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAMCode;
+<<<<<<< HEAD
 using DevExpress.ExpressApp.DC;
+=======
+using DevExpress.ExpressApp;
+using DevExpress.Persistent.Base;
+using DevExpress.ExpressApp.DC;
+using DevExpress.ExpressApp.Model;
+>>>>>>> 41fd1856b43042ac3e5b0b3ac523503b0f4f9f58
 namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
 {
+    [DefaultClassOptions]
+    [System.ComponentModel.DisplayName("Sản phẩm")]
+    [DefaultListViewOptions(MasterDetailMode.ListViewOnly, true, NewItemRowPosition.Top)]
+    [DefaultProperty("TenSP")]
 
     public partial class SAN_PHAM : XPObject
     {
         string fMaSP;
+<<<<<<< HEAD
         [XafDisplayName("Mã sản phẩm"), Size(100)]
+=======
+        [XafDisplayName("Mã sản phẩm")]
+>>>>>>> 41fd1856b43042ac3e5b0b3ac523503b0f4f9f58
         public string MaSP
         {
             get { return fMaSP; }
             set { SetPropertyValue<string>(nameof(MaSP), ref fMaSP, value); }
         }
         string fTenSP;
+<<<<<<< HEAD
         [XafDisplayName("Tên sản phẩm"), Size(100)]
 
+=======
+        [XafDisplayName("Tên sản phẩm")]
+>>>>>>> 41fd1856b43042ac3e5b0b3ac523503b0f4f9f58
         public string TenSP
         {
             get { return fTenSP; }
             set { SetPropertyValue<string>(nameof(TenSP), ref fTenSP, value); }
         }
         THUONG_HIEU fMaTH;
+        [XafDisplayName("Thương hiệu")]
         [Association(@"SAN_PHAMReferencesTHUONG_HIEU")]
         public THUONG_HIEU MaTH
         {
@@ -43,23 +63,23 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
             set { SetPropertyValue<THUONG_HIEU>(nameof(MaTH), ref fMaTH, value); }
         }
         DANH_MUC fMaDM;
+        [XafDisplayName("Danh mục")]
         [Association(@"SAN_PHAMReferencesDANH_MUC")]
         public DANH_MUC MaDM
         {
             get { return fMaDM; }
             set { SetPropertyValue<DANH_MUC>(nameof(MaDM), ref fMaDM, value); }
         }
-        NHA_CUNG_CAP fMaNhaCC;
-        [Association(@"SAN_PHAMReferencesNHA_CUNG_CAP")]
-        public NHA_CUNG_CAP MaNhaCC
-        {
-            get { return fMaNhaCC; }
-            set { SetPropertyValue<NHA_CUNG_CAP>(nameof(MaNhaCC), ref fMaNhaCC, value); }
-        }
+        
 
         decimal fDonGia;
+<<<<<<< HEAD
         [XafDisplayName("Đơn giá"), Size(100)]
 
+=======
+        [XafDisplayName("Đơn giá")]
+        [ModelDefault("DisplayFormat", "{0:### ### ### ###}")]
+>>>>>>> 41fd1856b43042ac3e5b0b3ac523503b0f4f9f58
         public decimal DonGia
         {
             get { return fDonGia; }
@@ -67,16 +87,24 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
         }
         
         string fDVT;
+<<<<<<< HEAD
         [XafDisplayName("Đơn vị tính"), Size(100)]
 
+=======
+        [XafDisplayName("Đơn vị tính")]
+>>>>>>> 41fd1856b43042ac3e5b0b3ac523503b0f4f9f58
         public string DVT
         {
             get { return fDVT; }
             set { SetPropertyValue<string>(nameof(DVT), ref fDVT, value); }
         }
         string fMota;
+<<<<<<< HEAD
         [XafDisplayName("Mô tả"), Size(100)]
 
+=======
+        [XafDisplayName("Mô tả")]
+>>>>>>> 41fd1856b43042ac3e5b0b3ac523503b0f4f9f58
         public string Mota
         {
             get { return fMota; }

@@ -200,16 +200,10 @@
           <simpleAssociation Id="4f968e6c-ef16-4270-9515-7b94088d77c7" sourceCollectionName="CT_DAT_HANGs" name="CT_DAT_HANGReferencesDAT_HANG" targetFieldName="MaDatHang">
             <xpObjectMoniker Id="f09fccaf-db98-4def-923c-0764dd682fcd" />
           </simpleAssociation>
-          <simpleAssociation Id="f6e5cd0f-3c32-43d2-850e-2a1d7eea6b55" sourceCollectionName="HOA_DONs" name="HOA_DONReferencesDAT_HANG" targetFieldName="ThongTinHangDat">
-            <xpObjectMoniker Id="4b2dc6af-5a90-40ca-964f-152d514a0622" />
-          </simpleAssociation>
         </saTargets>
         <collectionFields>
           <xpObjectHasCollectionFields Id="7d38d9d2-6bd6-4a21-ae54-be1cf7483eaf">
             <collectionField Id="0f660636-9699-45b8-b0d2-a57057ab39d5" name="CT_DAT_HANGs" />
-          </xpObjectHasCollectionFields>
-          <xpObjectHasCollectionFields Id="7322587d-0f75-43da-8711-72e7c6829c9c">
-            <collectionField Id="759bbab7-fbef-46bd-a491-4e8bef7d278b" name="HOA_DONs" />
           </xpObjectHasCollectionFields>
         </collectionFields>
       </xpObject>
@@ -238,6 +232,9 @@
           <generalXpObjectHasFields Id="1b0a2a03-c56e-4dc8-822b-a1ca0bc384b4">
             <field Id="34ffb67a-d6be-48e5-bf6f-5127d85a7ee8" name="MaTK" virtualColumnType="THONG_KE" logicalType="THONG_KE" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="e6f6468f-1f0b-45fb-872f-508e2d0b4f78">
+            <field Id="bfa81ba5-f3e2-4727-8444-1b217f2d9790" name="MaHD" virtualColumnType="HOA_DON" logicalType="HOA_DON" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
         </fields>
       </xpObject>
     </dataBaseObjectModelHasClasses>
@@ -253,13 +250,20 @@
           <generalXpObjectHasFields Id="9857e83a-3495-4b2f-8a4a-ebe6bca92c25">
             <field Id="d49d605c-0123-413f-978f-76412c4c9a25" name="NgayLapHD" columnType="DateTime" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
-          <generalXpObjectHasFields Id="48ecbca9-f849-49b9-8180-aad561546116">
-            <field Id="c25add40-d6f6-43bf-ad0c-229cc51fee67" name="ThongTinHangDat" columnType="Decimal" virtualColumnType="DAT_HANG" logicalType="DAT_HANG" delayedUpdateModifiedOnly="false" />
-          </generalXpObjectHasFields>
           <generalXpObjectHasFields Id="c000cc28-7fbc-4ebf-a385-3cb0aaffc9b2">
             <field Id="96f9ed1d-4647-4a59-8c0e-a344a91f66d1" name="MaNV" virtualColumnType="NHAN_VIEN" logicalType="NHAN_VIEN" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
         </fields>
+        <saTargets>
+          <simpleAssociation Id="18f319a7-aeb7-4581-a636-fa5e5b4e92f6" sourceCollectionName="CT_DAT_HANGs" name="CT_DAT_HANGReferencesHOA_DON" targetFieldName="MaHD">
+            <xpObjectMoniker Id="f09fccaf-db98-4def-923c-0764dd682fcd" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="bee432f5-881b-42cf-bc94-a08e7af1e621">
+            <collectionField Id="44ed3987-ad12-496b-a1f2-41f8c10b6e71" name="CT_DAT_HANGs" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
       </xpObject>
     </dataBaseObjectModelHasClasses>
     <dataBaseObjectModelHasClasses Id="8bed3276-b1e2-4252-ab4f-20e1c91579f8">

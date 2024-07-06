@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MuaSamThoiTrang.Module")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6602defa86cafb83067a73925d421ad9540546d7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f140e63ee1ae60df7a609b0245cdfc0cd26a5603")]
 [assembly: System.Reflection.AssemblyProductAttribute("MuaSamThoiTrang.Module")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MuaSamThoiTrang.Module")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.*")]

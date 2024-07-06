@@ -14,12 +14,20 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Reflection;
 using MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAMCode;
+using DevExpress.ExpressApp;
+using DevExpress.ExpressApp.DC;
+using DevExpress.Persistent.Validation;
 namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
 {
+    [System.ComponentModel.DisplayName("Thống kê")]
+    [DefaultListViewOptions(MasterDetailMode.ListViewOnly, true, NewItemRowPosition.Top)]
+    [DefaultProperty("MaTK")]
 
     public partial class THONG_KE : XPObject
     {
         string fMaTK;
+        [XafDisplayName("Mã thống kê")]
+        [RuleRequiredField("Yeucau MaTK", DefaultContexts.Save, "Phải có mã thống kê")]
         public string MaTK
         {
             get { return fMaTK; }
@@ -27,6 +35,7 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
         }
 
         DateTime fNgayTK;
+        [XafDisplayName("Ngày thống kê")]
         public DateTime NgayTK
         {
             get { return fNgayTK; }
@@ -34,9 +43,10 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
         }
 
         NHAN_VIEN fMaNV;
+        [XafDisplayName("Nhân viên")]
         [Association(@"THONG_KEReferencesNHAN_VIEN")]
         public NHAN_VIEN MaNV
-        {
+        { 
             get { return fMaNV; }
             set { SetPropertyValue<NHAN_VIEN>(nameof(MaNV), ref fMaNV, value); }
         }

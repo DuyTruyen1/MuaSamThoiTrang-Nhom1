@@ -1,30 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\CS403K\\MuaSamThoiTrang\\",
+  "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\MuaSamThoiTrang-Nhom1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{91CF6F9B-BA76-4A71-ACF6-6424FAAF94BF}|MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj|d:\\cs403k\\muasamthoitrang\\muasamthoitrang.module\\businessobjects\\quanlymuasam.xpo||{1923C09A-77B4-41C5-9C55-B8BC33E1A6D3}|",
-      "RelativeMoniker": "D:0:0:{91CF6F9B-BA76-4A71-ACF6-6424FAAF94BF}|MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj|solutionrelative:muasamthoitrang.module\\businessobjects\\quanlymuasam.xpo||{1923C09A-77B4-41C5-9C55-B8BC33E1A6D3}|"
+      "AbsoluteMoniker": "D:0:0:{91CF6F9B-BA76-4A71-ACF6-6424FAAF94BF}|MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj|c:\\users\\admin\\source\\repos\\muasamthoitrang-nhom1\\muasamthoitrang.module\\businessobjects\\quanlymuasamcode\\thong_ke.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91CF6F9B-BA76-4A71-ACF6-6424FAAF94BF}|MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj|solutionrelative:muasamthoitrang.module\\businessobjects\\quanlymuasamcode\\thong_ke.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91CF6F9B-BA76-4A71-ACF6-6424FAAF94BF}|MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj|d:\\cs403k\\muasamthoitrang\\muasamthoitrang.module\\businessobjects\\quanlymuasamcode\\san_pham.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91CF6F9B-BA76-4A71-ACF6-6424FAAF94BF}|MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj|solutionrelative:muasamthoitrang.module\\businessobjects\\quanlymuasamcode\\san_pham.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91CF6F9B-BA76-4A71-ACF6-6424FAAF94BF}|MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj|d:\\cs403k\\muasamthoitrang\\muasamthoitrang.module\\businessobjects\\quanlymuasamcode\\san_pham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91CF6F9B-BA76-4A71-ACF6-6424FAAF94BF}|MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj|solutionrelative:muasamthoitrang.module\\businessobjects\\quanlymuasamcode\\san_pham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91CF6F9B-BA76-4A71-ACF6-6424FAAF94BF}|MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj|d:\\cs403k\\muasamthoitrang\\muasamthoitrang.module\\businessobjects\\quanlymuasamcode\\dat_hang.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91CF6F9B-BA76-4A71-ACF6-6424FAAF94BF}|MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj|solutionrelative:muasamthoitrang.module\\businessobjects\\quanlymuasamcode\\dat_hang.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91CF6F9B-BA76-4A71-ACF6-6424FAAF94BF}|MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj|d:\\cs403k\\muasamthoitrang\\muasamthoitrang.module\\businessobjects\\quanlymuasamcode\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91CF6F9B-BA76-4A71-ACF6-6424FAAF94BF}|MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj|solutionrelative:muasamthoitrang.module\\businessobjects\\quanlymuasamcode\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91CF6F9B-BA76-4A71-ACF6-6424FAAF94BF}|MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj|d:\\cs403k\\muasamthoitrang\\muasamthoitrang.module\\businessobjects\\quanlymuasamcode\\thong_ke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{91CF6F9B-BA76-4A71-ACF6-6424FAAF94BF}|MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj|c:\\users\\admin\\source\\repos\\muasamthoitrang-nhom1\\muasamthoitrang.module\\businessobjects\\quanlymuasamcode\\thong_ke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{91CF6F9B-BA76-4A71-ACF6-6424FAAF94BF}|MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj|solutionrelative:muasamthoitrang.module\\businessobjects\\quanlymuasamcode\\thong_ke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91CF6F9B-BA76-4A71-ACF6-6424FAAF94BF}|MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj|c:\\users\\admin\\source\\repos\\muasamthoitrang-nhom1\\muasamthoitrang.module\\businessobjects\\quanlymuasamcode\\hoa_don.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91CF6F9B-BA76-4A71-ACF6-6424FAAF94BF}|MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj|solutionrelative:muasamthoitrang.module\\businessobjects\\quanlymuasamcode\\hoa_don.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91CF6F9B-BA76-4A71-ACF6-6424FAAF94BF}|MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj|c:\\users\\admin\\source\\repos\\muasamthoitrang-nhom1\\muasamthoitrang.module\\businessobjects\\quanlymuasamcode\\ct_dat_hang.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91CF6F9B-BA76-4A71-ACF6-6424FAAF94BF}|MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj|solutionrelative:muasamthoitrang.module\\businessobjects\\quanlymuasamcode\\ct_dat_hang.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91CF6F9B-BA76-4A71-ACF6-6424FAAF94BF}|MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj|c:\\users\\admin\\source\\repos\\muasamthoitrang-nhom1\\muasamthoitrang.module\\businessobjects\\quanlymuasamcode\\ct_dat_hang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91CF6F9B-BA76-4A71-ACF6-6424FAAF94BF}|MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj|solutionrelative:muasamthoitrang.module\\businessobjects\\quanlymuasamcode\\ct_dat_hang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91CF6F9B-BA76-4A71-ACF6-6424FAAF94BF}|MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj|c:\\users\\admin\\source\\repos\\muasamthoitrang-nhom1\\muasamthoitrang.module\\businessobjects\\quanlymuasam.xpo||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{91CF6F9B-BA76-4A71-ACF6-6424FAAF94BF}|MuaSamThoiTrang.Module\\MuaSamThoiTrang.Module.csproj|solutionrelative:muasamthoitrang.module\\businessobjects\\quanlymuasam.xpo||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A095111A-615A-4197-8E65-B52298EA8764}|MuaSamThoiTrang.Blazor.Server\\MuaSamThoiTrang.Blazor.Server.csproj|c:\\users\\admin\\source\\repos\\muasamthoitrang-nhom1\\muasamthoitrang.blazor.server\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A095111A-615A-4197-8E65-B52298EA8764}|MuaSamThoiTrang.Blazor.Server\\MuaSamThoiTrang.Blazor.Server.csproj|solutionrelative:muasamthoitrang.blazor.server\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,87 +38,113 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "QUANLYMUASAM.xpo",
-              "DocumentMoniker": "D:\\CS403K\\MuaSamThoiTrang\\MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAM.xpo",
-              "RelativeDocumentMoniker": "MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAM.xpo",
-              "ToolTip": "D:\\CS403K\\MuaSamThoiTrang\\MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAM.xpo",
-              "RelativeToolTip": "MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAM.xpo",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQFSURBVDhPfVRLbxtVFD4z9tiO4\u002BBH3nGMUidp05CWFBoiq1BoF00hjQQo2aQ8BBVIiAVixy9ASCwQSCxZoG6QWLAABKoEikJllShtUVLyaIidR\u002BPJw0ltx8545r44d5ypgkjzyZ9858yc7373nDOjwAE82XelIfHWpxfr68NfCkUJgxBuwQEY3lMEAMcLw7Ag/df47ze/vnYZw9ROdCAwYX8JHS9ejXZfGB1qa6z58PzpSNCrqS5FUQB1KsDFfKYM06kdsCy5Bah2/CAwwQ52nB\u002BNdp17dfjUUyff6D9ReyIa8WpNIY/SFPRAM7IuoMGuwWBl04KNHAGLUHkyh/\u002BBFFTifa\u002B8HO95ZqS5OdIXCla7C5aiPCwDPCwLyCGzJQ4TCyWYe2BANm8BIbbD/4lJSEG1uqbmaqSh9qwrENDSBYBUTlJAGrmK1\u002BtFAUvrZVkiqPGo4HXbWo8VVBgXfi5Ak/sSrBWRjUBiDKqwyp1hFS71VMPg6QAMnglBojMocw8VdCHd7edGrjXE2qJVfq8tIjuKP5s\u002BTYEadwlSK9chV/gBdou/gFBuh1o7yUsn\u002B8NniwWykc9auhSTsB0SyoGgJekMl/suFVxLYoyZkN1KQkuIwpmOZnj\u002B2a7wyPDQhWPHG17zVbvbKlIV2ILUEUMhSSlIsV4EKY/OOINCbgNa6pqhp6MbutqPwfF4m8qZK8qoCFSkKth3yNAhJmMRbWH8l5TNJFgDGad4v2iuwZYxCXppDNb3kmCSEnBZowOoOMRzMbSCOfhARfSR431R\u002BYzJ8mDyPFjcxBiSUex8RciB/aagQ2VhIQOpxQ2U5/ZDsjGyj7GIlyfinPq02r27dx/4p\u002B5ZHsYJlkGw3TyZx7dxW2o4kIJUv/PjdX02OUYJQwnh7GprLgU0sR3z\u002B2oba1//Z37hxs62nsKwUFSXO95x6iLQkgaAw7oPOUvy2HJ8JOVawp6xYJ0n\u002BkTEE/N4/bH\u002BFwY\u002Bn5ue/GxxZvE7o0QL9bHqp/sSl75dTs18r6\u002BlfyKmyG5nzLlDh9NBYrDpvf6Blo80TeuWtk2LzE7c0L9Kz\u002BbvDLwd/ULzaL34/fAzSjP6UunnX7/JfOA4OgzyyK2xxs72d4c\u002BgTevfAytDfE46sbwXkh1ab3Dl0d974y8D8/1JuqxmV0YV48UxJHwcGF6hbYFBWUKymzHyzn3CC40SqlfaHnVcKWgxDN4LapkzlGCQCyWX9P17Nifv8H4rXFYXl3fNvZonlFezu0Ya8mJ22Tsj1swf3\u002B5SAjflDmyEY\u002BFP\u002BiOGFa5anp62Zyfymb0ldLk5qoxXsyTFdULoYWZdfP\u002B9M7W5mr5770cu7mRLiePbArC6b6zMY77IzrTITXkhOErAOxf4S0TDThQxZMAAAAASUVORK5CYII=",
-              "WhenOpened": "2024-06-23T10:34:56.475Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SAN_PHAM.Designer.cs",
-              "DocumentMoniker": "D:\\CS403K\\MuaSamThoiTrang\\MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\SAN_PHAM.Designer.cs",
-              "RelativeDocumentMoniker": "MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\SAN_PHAM.Designer.cs",
-              "ToolTip": "D:\\CS403K\\MuaSamThoiTrang\\MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\SAN_PHAM.Designer.cs",
-              "RelativeToolTip": "MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\SAN_PHAM.Designer.cs",
+              "Title": "THONG_KE.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\MuaSamThoiTrang-Nhom1\\MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\THONG_KE.cs",
+              "RelativeDocumentMoniker": "MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\THONG_KE.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\MuaSamThoiTrang-Nhom1\\MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\THONG_KE.cs",
+              "RelativeToolTip": "MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\THONG_KE.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T07:02:14.527Z",
+              "WhenOpened": "2024-06-30T00:58:11.162Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SAN_PHAM.cs",
-              "DocumentMoniker": "D:\\CS403K\\MuaSamThoiTrang\\MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\SAN_PHAM.cs",
-              "RelativeDocumentMoniker": "MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\SAN_PHAM.cs",
-              "ToolTip": "D:\\CS403K\\MuaSamThoiTrang\\MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\SAN_PHAM.cs",
-              "RelativeToolTip": "MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\SAN_PHAM.cs",
+              "Title": "HOA_DON.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\MuaSamThoiTrang-Nhom1\\MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\HOA_DON.cs",
+              "RelativeDocumentMoniker": "MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\HOA_DON.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\MuaSamThoiTrang-Nhom1\\MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\HOA_DON.cs",
+              "RelativeToolTip": "MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\HOA_DON.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T04:45:00.704Z",
+              "WhenOpened": "2024-06-30T00:55:14.998Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DAT_HANG.Designer.cs",
-              "DocumentMoniker": "D:\\CS403K\\MuaSamThoiTrang\\MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\DAT_HANG.Designer.cs",
-              "RelativeDocumentMoniker": "MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\DAT_HANG.Designer.cs",
-              "ToolTip": "D:\\CS403K\\MuaSamThoiTrang\\MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\DAT_HANG.Designer.cs",
-              "RelativeToolTip": "MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\DAT_HANG.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Title": "CT_DAT_HANG.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\MuaSamThoiTrang-Nhom1\\MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\CT_DAT_HANG.Designer.cs",
+              "RelativeDocumentMoniker": "MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\CT_DAT_HANG.Designer.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\MuaSamThoiTrang-Nhom1\\MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\CT_DAT_HANG.Designer.cs",
+              "RelativeToolTip": "MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\CT_DAT_HANG.Designer.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAwBQAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T04:59:21.835Z",
+              "WhenOpened": "2024-06-30T00:46:16.814Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "USER.cs",
-              "DocumentMoniker": "D:\\CS403K\\MuaSamThoiTrang\\MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\USER.cs",
-              "RelativeDocumentMoniker": "MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\USER.cs",
-              "ToolTip": "D:\\CS403K\\MuaSamThoiTrang\\MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\USER.cs",
-              "RelativeToolTip": "MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\USER.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Title": "CT_DAT_HANG.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\MuaSamThoiTrang-Nhom1\\MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\CT_DAT_HANG.cs",
+              "RelativeDocumentMoniker": "MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\CT_DAT_HANG.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\MuaSamThoiTrang-Nhom1\\MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\CT_DAT_HANG.cs",
+              "RelativeToolTip": "MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\CT_DAT_HANG.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T04:45:16.896Z",
+              "WhenOpened": "2024-06-30T00:46:08.602Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "THONG_KE.cs",
-              "DocumentMoniker": "D:\\CS403K\\MuaSamThoiTrang\\MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\THONG_KE.cs",
-              "RelativeDocumentMoniker": "MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\THONG_KE.cs",
-              "ToolTip": "D:\\CS403K\\MuaSamThoiTrang\\MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\THONG_KE.cs",
-              "RelativeToolTip": "MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\THONG_KE.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Title": "QUANLYMUASAM.xpo",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\MuaSamThoiTrang-Nhom1\\MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAM.xpo",
+              "RelativeDocumentMoniker": "MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAM.xpo",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\MuaSamThoiTrang-Nhom1\\MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAM.xpo",
+              "RelativeToolTip": "MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAM.xpo",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAlAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQFSURBVDhPfVRLbxtVFD4z9tiO4\u002BBH3nGMUidp05CWFBoiq1BoF00hjQQo2aQ8BBVIiAVixy9ASCwQSCxZoG6QWLAABKoEikJllShtUVLyaIidR\u002BPJw0ltx8545r44d5ypgkjzyZ9858yc7373nDOjwAE82XelIfHWpxfr68NfCkUJgxBuwQEY3lMEAMcLw7Ag/df47ze/vnYZw9ROdCAwYX8JHS9ejXZfGB1qa6z58PzpSNCrqS5FUQB1KsDFfKYM06kdsCy5Bah2/CAwwQ52nB\u002BNdp17dfjUUyff6D9ReyIa8WpNIY/SFPRAM7IuoMGuwWBl04KNHAGLUHkyh/\u002BBFFTifa\u002B8HO95ZqS5OdIXCla7C5aiPCwDPCwLyCGzJQ4TCyWYe2BANm8BIbbD/4lJSEG1uqbmaqSh9qwrENDSBYBUTlJAGrmK1\u002BtFAUvrZVkiqPGo4HXbWo8VVBgXfi5Ak/sSrBWRjUBiDKqwyp1hFS71VMPg6QAMnglBojMocw8VdCHd7edGrjXE2qJVfq8tIjuKP5s\u002BTYEadwlSK9chV/gBdou/gFBuh1o7yUsn\u002B8NniwWykc9auhSTsB0SyoGgJekMl/suFVxLYoyZkN1KQkuIwpmOZnj\u002B2a7wyPDQhWPHG17zVbvbKlIV2ILUEUMhSSlIsV4EKY/OOINCbgNa6pqhp6MbutqPwfF4m8qZK8qoCFSkKth3yNAhJmMRbWH8l5TNJFgDGad4v2iuwZYxCXppDNb3kmCSEnBZowOoOMRzMbSCOfhARfSR431R\u002BYzJ8mDyPFjcxBiSUex8RciB/aagQ2VhIQOpxQ2U5/ZDsjGyj7GIlyfinPq02r27dx/4p\u002B5ZHsYJlkGw3TyZx7dxW2o4kIJUv/PjdX02OUYJQwnh7GprLgU0sR3z\u002B2oba1//Z37hxs62nsKwUFSXO95x6iLQkgaAw7oPOUvy2HJ8JOVawp6xYJ0n\u002BkTEE/N4/bH\u002BFwY\u002Bn5ue/GxxZvE7o0QL9bHqp/sSl75dTs18r6\u002BlfyKmyG5nzLlDh9NBYrDpvf6Blo80TeuWtk2LzE7c0L9Kz\u002BbvDLwd/ULzaL34/fAzSjP6UunnX7/JfOA4OgzyyK2xxs72d4c\u002BgTevfAytDfE46sbwXkh1ab3Dl0d974y8D8/1JuqxmV0YV48UxJHwcGF6hbYFBWUKymzHyzn3CC40SqlfaHnVcKWgxDN4LapkzlGCQCyWX9P17Nifv8H4rXFYXl3fNvZonlFezu0Ya8mJ22Tsj1swf3\u002B5SAjflDmyEY\u002BFP\u002BiOGFa5anp62Zyfymb0ldLk5qoxXsyTFdULoYWZdfP\u002B9M7W5mr5770cu7mRLiePbArC6b6zMY77IzrTITXkhOErAOxf4S0TDThQxZMAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-06-30T00:15:58.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "THONG_KE.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\MuaSamThoiTrang-Nhom1\\MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\THONG_KE.Designer.cs",
+              "RelativeDocumentMoniker": "MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\THONG_KE.Designer.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\MuaSamThoiTrang-Nhom1\\MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\THONG_KE.Designer.cs",
+              "RelativeToolTip": "MuaSamThoiTrang.Module\\BusinessObjects\\QUANLYMUASAMCode\\THONG_KE.Designer.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAIwCQAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T04:45:11.432Z",
+              "WhenOpened": "2024-06-29T03:27:04.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\MuaSamThoiTrang-Nhom1\\MuaSamThoiTrang.Blazor.Server\\Startup.cs",
+              "RelativeDocumentMoniker": "MuaSamThoiTrang.Blazor.Server\\Startup.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\MuaSamThoiTrang-Nhom1\\MuaSamThoiTrang.Blazor.Server\\Startup.cs",
+              "RelativeToolTip": "MuaSamThoiTrang.Blazor.Server\\Startup.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwB8AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T03:06:46.898Z",
               "EditorCaption": ""
             }
           ]

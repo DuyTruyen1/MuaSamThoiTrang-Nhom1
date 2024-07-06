@@ -13,12 +13,20 @@ using DevExpress.Data.Filtering;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Reflection;
+using DevExpress.ExpressApp;
+using DevExpress.ExpressApp.DC;
+using DevExpress.Persistent.Validation;
+using DevExpress.ExpressApp.Model;
 namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
 {
-
+    [System.ComponentModel.DisplayName("Đặt hàng")]
+    [DefaultListViewOptions(MasterDetailMode.ListViewOnly, true, NewItemRowPosition.Top)]
+    [DefaultProperty("MaDH")]
     public partial class DAT_HANG : XPObject
     {
         string fMaDH;
+        [XafDisplayName("Mã đặt hàng")]
+        [RuleRequiredField("Yeucau MaDH", DefaultContexts.Save, "Phải có mã đặt hàng")]
         public string MaDH
         {
             get { return fMaDH; }
@@ -26,6 +34,7 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
         }
         USER fNguoiDat;
         [Association(@"DAT_HANGReferencesUSER")]
+        [XafDisplayName("Người đặt")]
         public USER NguoiDat
         {
             get { return fNguoiDat; }
@@ -33,18 +42,23 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
         }
         
         DateTime fNgayDH;
+        [XafDisplayName("Ngày đặt hàng")]
+        [ModelDefault("EditMask", "dd/MM/yyyy HH:mm")]
+        [ModelDefault("DisplayFormat", "{0:dd/MM/yyyy HH:mm}")]
         public DateTime NgayDH
         {
             get { return fNgayDH; }
             set { SetPropertyValue<DateTime>(nameof(NgayDH), ref fNgayDH, value); }
         }
         bool fTrangThai;
+        [XafDisplayName("Trạng thái")]
         public bool TrangThai
         {
             get { return fTrangThai; }
             set { SetPropertyValue<bool>(nameof(TrangThai), ref fTrangThai, value); }
         }
         THONG_KE fMaTk;
+        [XafDisplayName("Mã thống kê")]
         [Association(@"DAT_HANGReferencesTHONG_KE")]
         public THONG_KE MaTk
         {
@@ -53,8 +67,7 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
         }
         [Association(@"CT_DAT_HANGReferencesDAT_HANG")]
         public XPCollection<CT_DAT_HANG> CT_DAT_HANGs { get { return GetCollection<CT_DAT_HANG>(nameof(CT_DAT_HANGs)); } }
-        [Association(@"HOA_DONReferencesDAT_HANG")]
-        public XPCollection<HOA_DON> HOA_DONs { get { return GetCollection<HOA_DON>(nameof(HOA_DONs)); } }
+        
     }
 
 }
