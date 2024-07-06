@@ -63,6 +63,14 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
             get { return fMaTk; }
             set { SetPropertyValue<THONG_KE>(nameof(MaTk), ref fMaTk, value); }
         }
+        public decimal GetDonGiaFromSanPham()
+        {
+            if (MaSanPham != null)
+            {
+                return MaSanPham.DonGia;
+            }
+            return 0;
+        }
     }
 
 }

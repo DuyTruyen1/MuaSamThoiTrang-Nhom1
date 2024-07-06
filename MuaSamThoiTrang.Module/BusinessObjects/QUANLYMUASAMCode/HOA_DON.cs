@@ -12,7 +12,7 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
 
     public partial class HOA_DON
     {
-        public HOA_DON(Session session) : base(session) { }
+        public HOA_DON(Session session) : base(session) {}
         public override void AfterConstruction()
         { base.AfterConstruction();
             if (Session.IsNewObject(this)) 
