@@ -34,7 +34,7 @@ namespace MuaSamThoiTrang.Module.BusinessObjects.QUANLYMUASAM
         NHAN_VIEN fMaNV;
         [Association(@"THONG_KEReferencesNHAN_VIEN")]
         public NHAN_VIEN MaNV
-        {
+        { 
             get { return fMaNV; }
             set { SetPropertyValue<NHAN_VIEN>(nameof(MaNV), ref fMaNV, value); }
         }
